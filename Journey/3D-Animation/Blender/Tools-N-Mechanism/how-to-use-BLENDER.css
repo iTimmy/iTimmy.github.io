@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+}
+.header {
+    background-attachment: fixed;
+    background-image: url("CkY2HP.png");
+    background-size: cover;
+    background-position: center;
+    height: 820px;
+}
+.navigation {
+    background-image: url("Unilever.gif");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 15px rgba(255, 255, 0, 0.5);
+}
+.cover {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 200px;
+    width: cover;
+}
+.TITLE {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 5px;
+    color: white;
+    width: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+h1:hover {
+    color: white;
+    opacity: 100;
+}
+
+
+
+.body {
+    background-attachment: fixed;
+    background-image: url("563373.jpg");
+    background-size: cover;
+    background-position: center;
+    width: cover;
+    height: 2000px;
+}
+.bodyNavigation {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("After-Effects-Project-Files-Logi.gif");
+    background-size: 500px 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 0 auto;
+    /* box-shadow: 0px 25px 50px black; */
+    box-shadow: 0px 30px 50px rgb(0, 255, 255, 0.15);
+}
+.bodyNavigation:hover, .nodeHeader:hover, .navigation:hover {
+    box-shadow: 0px 1px 15px yellow; 
+}
+
+.toolsNav {
+    margin: 0 auto;
+    /* border: 10px solid red; */
+    justify-content: space-around;
+    /*
+    margin-left: 100px;
+    margin-right: 100px;
+    */
+}
+input {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 100px; /* height, width */
+    margin: 1px 10px;
+    border: none;
+    border-radius: 25%;
+    box-shadow: 0px 1px 20px black;
+    margin-top: 30px;
+    width: 350px;
+    
+}
+input:hover {
+    box-shadow: 0px 1px 20px lime;
+    background-color: rgba(0, 0, 0, 0.86);
+}
+.row {
+    justify-content: space-around;
+    /* border: 5px solid yellow; */
+}
+.column {
+    /* border: 5px solid blue; */
+}
+.nodeSection {
+    background-attachment: fixed;
+    background-image: url("563358.jpg");
+    background-size: cover;
+    background-position: center;
+    width: cover;
+    height: 2000px;
+}
+.btnScroll {
+    position: fixed;
+    bottom: 10px;
+    left: 680px;
+    cursor: pointer;
+    opacity: 25%;
+}
+.btnScroll:hover, .backGIF:hover {
+    opacity: 100%;
+}
+.backGIF {
+    position: fixed;
+    opacity: 5%;
+    bottom: 0px;
+    right: 638px;
+    cursor: pointer;
+}
+.nodeHeader {
+    background-image: url("Unilever.gif");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: cover;
+    margin: 0 auto;
+    box-shadow: 0px 30px 100px rgb(255, 255, 255, 0.15);
+}
+h2 {
+    text-align: center;
+    padding: 5px 5px;
+    color: white;
+    width: 2000px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 30px 50px rgb(0, 255, 255, 0.15);
+}
+.nodeInfo {
+    color: white;
+}
+.INPUT {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,272 @@
+<html>
+
+    <head>
+        <title> HOW-TO-USE: Blender </title>
+    </head>
+
+    <!-- Link to BS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="how-to-use-BLENDER.css">
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="row">
+                <div class="col-xs-12 column">
+                    <div class="navigation">
+                        <div class="cover">
+                            <br><br><br>
+                            <h1 class="TITLE">
+                            Using Blender 
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="row">
+                <div class="col-12 column">
+                    <div class="bodyNavigation">
+                        <!-- CSS CODE! -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolsNav">
+                <br><br><br>
+                <div class="row justify-content-center">
+                    <div class="col-xs-3 column">
+                        <input type="button" value="Basics + Navigation">
+                    </div>
+                    <div class="col-xs-6 column">
+                        <input type="button" value="Modeling + Sculpting">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xs-6 column">
+                        <input type="button" onClick="document.getElementsByClassName('nodeSection').scrollIntoView();" value="Nodes + UV-Wrapping">
+                    </div>
+                    <div class="col-xs-6 column">
+                        <input type="button" value="Animation + Timeline">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xs-6 column">
+                        <input type="button" value="Scripting">
+                    </div>
+                    <div class="col-xs-6 column">
+                        <input type="button" value="Rendering">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nodeSection">
+            <div class="nodeHeader">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2><br><br>Nodes + UV-Wrapping </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nodeInfo">
+                <br><br>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3> Input </h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3> Output </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3> Material Output </h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3> Shader </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h3> Texture </h3>
+                    </div>
+                    <div class="col-xs-6">
+                        <h3> Color </h3>
+                    </div>
+                </div>
+                <br><br>
+
+            <div class="INPUT">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>
+                        <h4> Ambient Occlusion </h4>
+                            Controls the shadowing of occlusions <br>
+                            RETURNS: BW/COLOR <br>
+                                Sample: control resolution <br>
+                                Inside: inside out <br>
+                                Only local: other objects do not affect the ambient occlusion <br>
+                            
+                        <h4> Attribute </h4>
+                            Input:
+                                Color
+                                Vector
+                                Fac
+                                Bevel  
+                            Output:
+                                Radius
+                                Normal
+
+                        <h4> Bevel </h4>  
+                            Input:
+                                Normal
+                                Camera Data
+                        
+                        <h4> Camera Data </h4>
+                            Input:
+                                View Vector
+                                View Z Depth
+                                View Distance
+
+                        <h4> Fresnel </h4>
+                            Output:
+                                IOR
+                                Normal
+                            Input:
+                                Fac
+
+                        <h4> Geometry </h4>
+                            Input:
+                                Position
+                                Normal
+                                Tangent
+                                True Normal
+                                Incoming
+                                Parametric
+                                Backfacing
+                                Pointiness
+                                Random Per Island
+                        
+                        <h4> Hair Info </h4>
+                            Input:
+                                Is Strand
+                                Intercept
+                                Thickness
+                                Tangent Normal
+                                Random
+
+                        <h4> Layer Weight </h4>
+                            Output:
+                                Blend
+                                Normal
+                            Input:
+                                Fresnel
+                                Facing
+
+                        <h4> Light Path </h4>
+                            Input:
+                                Is Camera Ray
+                                Is Shadow Ray
+                                Is Diffuse Ray
+                                Is Glossy Ray
+                                Is Singular Ray
+                                Is Reflection Ray
+                                Is Transmission Ray
+                                Ray Length
+                                Ray Depth
+                                Diffuse Depth
+                                Glossy Depth
+                                Transparent Depth
+                                Transmission Depth
+
+                        <h4> Object Info </h4>
+                            Input:
+                                Location
+                                Color
+                                Object Index
+                                Material Index
+                                Random
+
+                        <h4> Particle Info </h4>
+                            Input:
+                                Index
+                                Random
+                                Age
+                                Lifetime
+                                Location
+                                Size
+                                Velocity
+                                Angular Velocity
+
+                        <h4> RGB </h4>
+                            Input:
+                                Color
+                        
+                        <h4> Tangent </h4>
+                            Input:
+                                Tangent
+                        
+                        <h4> Texture Coordinate </h4>
+                            Input:
+                                Generated
+                                Normal
+                                UV
+                                Object
+                                Camera
+                                Window
+                                Reflection
+                                
+                        <h4> UV Map </h4>
+                                Input:
+                                    UV
+
+                        <h4> Value </h4>
+                                Input:
+                                    Value
+
+                        <h4> Vertex Color </h4>
+                                Input:
+                                    Color
+                                    Alpha
+                            
+                        <h4> Volume Info <h4>
+                                Input:
+                                    Color
+                                    Density
+                                    Flame
+                                    Temperature
+
+                        <h4> Wireframe </h4>
+                                Output:
+                                    Size
+                                Input:
+                                    Fac
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation FIXED icons -->
+        <div class="navSticky">
+            <div class="row">
+                <div class="col-lg-6 col-xs-6 column">
+                    <a href="../how-to-use-BLENDER.html"><img class="backGIF" src="source.gif" height=100 width=100></a>
+                </div>
+                <div class="col-lg-6 col-xs-6 column">
+                    <img class="btnScroll" src="up-arrow.png" height=50 width=50>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!-- Link to JS -->
+    <script type="text/js" src="how-to-use-BLENDER.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        #container {
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.5);
+            border: 1px solid red;
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            opacity: 100;
+        }
+    </style>
+<body>
+    <div id="container">
+        <p> This is an important matter! </p>
+    </div>
+</body>
+    <script>
+        var colorChanger = document.getElementById("container").style.opacity;
+        
+        /*var colors = ["red", "green", "blue"];
+        var counter = 0;
+        var currentImage;*/
+
+/*
+        function changeColor() {
+            if (counter >= colors.length) {
+                counter--;
+            }
+            colorChanger.style.backgroundColor = colors[counter];
+            counter++;
+        }
+    */
+        function smoothTransition() {
+            colorChanger = parseInt(colorChanger);
+            console.log(colorChanger);
+            
+            while (colorChanger >= 50) {
+            colorChanger--;
+            }
+            console.log(colorChanger);
+        }
+
+        // setInterval(changeColor, 3000);
+    </script>
+</html>

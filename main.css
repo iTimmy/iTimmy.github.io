@@ -1,0 +1,50 @@
+body {
+    background-attachment: fixed;
+    background-image: url("IMAGES/4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    text-align: center;
+    font-family: American Typewriter, serif;
+}
+
+/* 'Student Timmy' */
+h1 {
+    font-family: Chalkduster, fantasy;
+    color: white;
+}
+
+/* Box Photograph */
+.mainImg {
+    border: 5px solid black;
+}
+
+/* Blog | Github | Portfolio */
+.links {
+    max-width: 200px;
+    margin: 0 auto;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: red;
+}
+.unlist:hover {
+    color: orange;
+}
+.linkProject {
+    float: center;
+}
+.linkProject li {
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    background-image: url("IMAGES/board.jpg");
+    border-radius: 30%;
+    border: 10px solid black;
+}

@@ -1,0 +1,71 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+.container-fluid {
+    border: 5px solid black;
+}
+.row {
+    border: 5px solid red;
+}
+.column {
+    border: 5px solid cyan;
+}
+.HEADER {
+    background-attachment: fixed;
+    background-image: url("home.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 2000px black;
+    box-shadow: 0px 5px 500px black;
+    box-shadow: 0px 20px 100px black;
+    box-shadow: 0px 20px 50px black;
+    font-family: Cobblestone;
+}
+.navigationHeader {
+    border: 8px white solid;
+    width: 100%; 
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    /* margin: 0 auto; */
+    width: 100%; 
+}
+.navig {
+    justify-content: center;
+}
+/*
+h1 {
+    font-family: cursive;
+    font-size: 150px;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.38);
+}
+*/
+.BODY-1 {
+    background-attachment: fixed;
+    background-image: url("home2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Papyrus;
+}
+.cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: -10px 0px 20px 100px black;
+}
+.container {
+    /*text-align: center;*/
+}
+input {
+    border-radius: 20%;
+    color: white;
+    width: 162px;
+    background-color: rgba(0, 0, 0, 0.38);
+    box-shadow: 0 20px 10px black;
+}
+input:hover {
+    background-color: rgba(0, 0, 0, 0.78);
+}

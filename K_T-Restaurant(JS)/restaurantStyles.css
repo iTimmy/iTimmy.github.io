@@ -1,0 +1,160 @@
+/*-----------------------GENERAL-----------------------*/
+body {
+    background-color: black;
+    background-attachment: scroll;
+    font-size: 20px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+/*-----------------------CURRENT-PAGE------------------*/
+.current {
+    text-align: left;
+    font-size: 15px;
+}
+.current:hover {
+    font-family: Snell Roundhand, cursive;
+}
+/*-----------------------HEADER(S)---------------------*/
+.RESTAURANT-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Verdana;
+}
+h1 {
+    font-family: Chalkduster, fantasy;
+}
+h2 {
+    font-size: 25px;
+    color: yellow;
+}
+.navLinks {
+    text-align: left;
+    font-size: 18px;
+}
+/*-----------------------HEADLINE----------------------*/
+hr {
+    border: 10px solid white;
+    opacity: 0.05;
+    width: cover;
+}
+h3:hover {
+    color: red;
+}
+/*------------------HOME-BODY--------------------------*/
+.HOME-BODY {
+    background-attachment: fixed;
+    background-image: url("theme-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Chalkduster, fantasy;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+/*------------------MENU-BODY--------------------------*/
+.MENU-BODY {
+    background-attachment: fixed;
+    background-image: url("menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.MENU-BODY-2 {
+    background-attachment: fixed;
+    background-image: url("menu2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.black-line {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: cover;
+    color: #FFD9D2;
+}
+.images {
+    border: 10px solid white;
+}
+.images2 {
+    border: 10px solid black;
+}
+/*---------------CONTACT-BODY--------------------------*/
+.CONTACT-BODY {
+    background-attachment: fixed;
+    background-image: url("glacier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.contactSection {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.click:hover {
+    background-color: black;
+    opacity: 0.5;
+    font-size: 20px;
+    padding: 12px 28px;
+    border-radius: 50%;
+}
+/*-----------------------WRITING-----------------------*/
+.sectionWrite {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.36);
+    opacity: 100%;
+    border: 5px solid rgba(0, 0, 0, 0.36);
+    border-radius: 5%;
+    font-size: 15px;
+    font-family: Chalkduster, fantasy;
+    width: 530px;
+    height: 450px;
+    content: 50px, 50px, 50px, 50px;
+}
+/*-----------------------IMAGES------------------------*/
+.candleImg {
+    border-radius: 5%;
+    nav-up: auto;
+    margin: 0 auto;
+    width: 500px;
+    height: 450px;
+    box-shadow: -8px 20px 2px black;
+    box-shadow: -10px 20px 2px black;
+    box-shadow: -20px 20px 50px black;
+}
+/*-----------------------LINKS-------------------------*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: underline;
+    font-family: cursive;
+}
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+a:active {
+    font-weight: bold;
+}
+.reviews {
+    color: yellow;
+}
+.storeInfo {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*-----------------------THE-END-----------------------*/
