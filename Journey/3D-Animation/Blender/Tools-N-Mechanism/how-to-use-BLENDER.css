@@ -141,8 +141,67 @@ h2 {
 }
 .nodeInfo {
     color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
 }
 .INPUT {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+}
+li {
+    text-align: left;
+    list-style-type: circle;
+}
+ul {
+    /* text-indent: 80px; */
+}
+.INPUT h4 {
+    text-decoration: underline;
+    background-color: rgba(255, 60, 0, 0.25);
+    background-size: cover;
+    width: cover;
+    box-shadow: 0px 5px 50px rgb(255, 136, 1);
+    text-shadow: 0px 5px 50px rgba(0, 0, 0);
+}
+.SHADER h4 {
+    text-decoration: underline;
+    background-color: rgba(0, 255, 106, 0.25);
+    background-size: cover;
+    width: cover;
+    box-shadow: 0px 5px 50px rgb(113, 242, 193);
+    text-shadow: 0px 5px 50px rgba(0, 0, 0);
+}
+.TEXTURE h4 {
+    text-decoration: underline;
+    background-color: rgba(246, 178, 108, 0.25);
+    background-size: cover;
+    width: cover;
+    box-shadow: 0px 5px 50px rgb(246, 178, 108);
+    text-shadow: 0px 5px 50px rgba(0, 0, 0);
+}
+.COLOR h4 {
+    text-decoration: underline;
+    background-color: rgb(251, 255, 0, 0.25);
+    background-size: cover;
+    width: cover;
+    box-shadow: 0px 5px 50px rgb(235, 217, 43);
+    text-shadow: 0px 5px 50px rgba(0, 0, 0);
+}
+.nodeROW {
+    border: 5px solid red;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.nodeCOL {
+    /* border: 5px solid cyan; */
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    width: cover;
+}
+b {
+    text-align: left;
+    text-indent: -20px;
+}
+.nodeROWHeader {
+    /* border: 3px solid red; */
 }

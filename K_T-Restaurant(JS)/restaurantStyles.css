@@ -158,3 +158,21 @@ a:active {
     background-color: rgba(0, 0, 0, 0.5);
 }
 /*-----------------------THE-END-----------------------*/
+.column {
+    /* border: 5px solid cyan; */
+}
+.row {
+    /* border: 5px solid red; */
+}
+column p {
+    padding: 20px 20px 20px 20px;
+}
+.ROWW {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ROWW p {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.ROWW h2 {
+    background-color: rgba(0, 0, 0, 0.88);
+}

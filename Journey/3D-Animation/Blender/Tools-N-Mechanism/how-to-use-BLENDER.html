@@ -101,155 +101,1366 @@
                 </div>
                 <br><br>
 
+
+
+
+
+            <!-- INPUT -->
             <div class="INPUT">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p>
-                        <h4> Ambient Occlusion </h4>
+
+                <!-- ROW 1 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Ambient Occlusion -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Ambient Occlusion </h4>
+                        </div>
                             Controls the shadowing of occlusions <br>
                             RETURNS: BW/COLOR <br>
                                 Sample: control resolution <br>
                                 Inside: inside out <br>
                                 Only local: other objects do not affect the ambient occlusion <br>
-                            
-                        <h4> Attribute </h4>
-                            Input:
-                                Color
-                                Vector
-                                Fac
-                                Bevel  
-                            Output:
-                                Radius
-                                Normal
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6">
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Vector </li> 
+                                <li> Fac </li> 
+                                <li> Bevel </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6">
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Vector </li> 
+                                <li> Fac </li> 
+                                <li> Bevel </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Attribute -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Attribute </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Vector </li> 
+                                <li> Fac </li> 
+                                <li> Bevel </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Radius </li> 
+                                <li> Normal </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bevel -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Bevel </h4>  
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> NONE </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Normal </li> 
+                                <li> Camera Data </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h4> Bevel </h4>  
-                            Input:
-                                Normal
-                                Camera Data
-                        
-                        <h4> Camera Data </h4>
-                            Input:
-                                View Vector
-                                View Z Depth
-                                View Distance
+                <!-- ROW 2 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Camera Data -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Camera Data </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> View Vector </li> 
+                                <li> View Z Depth </li> 
+                                <li> View Distance </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fresnel -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Fresnel </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> IOR </li> 
+                                <li> Normal </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Fac </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Geometry -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Geometry </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Position </li> 
+                                <li> Normal </li> 
+                                <li> Tangent </li> 
+                                <li> True Normal </li> 
+                                <li> Incoming </li> 
+                                <li> Parametric </li> 
+                                <li> Backfacing </li> 
+                                <li> Pointiness </li> 
+                                <li> Random Per Island </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h4> Fresnel </h4>
-                            Output:
-                                IOR
-                                Normal
-                            Input:
-                                Fac
+                <!-- ROW 3 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Hair Info -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Hair Info </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Is Strand </li> 
+                                <li> Intercept </li>
+                                <li> Thickness </li>
+                                <li> Tangent Normal </li>
+                                <li> Random </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Layer Weight -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Layer Weight </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Blend </li>
+                                <li> Normal </li>
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Fresnel </li>
+                                <li> Facing </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Light Path -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Light Path </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Is Camera Ray </li>
+                                <li> Is Shadow Ray </li>
+                                <li> Is Diffuse Ray </li>
+                                <li> Is Glossy Ray </li>
+                                <li> Is Singular Ray </li>
+                                <li> Is Reflection Ray </li>
+                                <li> Is Transmission Ray </li>
+                                <li> Ray Length </li>
+                                <li> Ray Depth </li>
+                                <li> Diffuse Depth </li>
+                                <li> Glossy Depth </li>
+                                <li> Transparent Depth </li>
+                                <li> Transmission Depth </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h4> Geometry </h4>
-                            Input:
-                                Position
-                                Normal
-                                Tangent
-                                True Normal
-                                Incoming
-                                Parametric
-                                Backfacing
-                                Pointiness
-                                Random Per Island
-                        
-                        <h4> Hair Info </h4>
-                            Input:
-                                Is Strand
-                                Intercept
-                                Thickness
-                                Tangent Normal
-                                Random
+                <!-- ROW 4 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Object Info -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Object Info </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Location </li>
+                                <li> Color </li>
+                                <li> Object Index </li>
+                                <li> Material Index </li>
+                                <li> Random </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Particle Info -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Particle Info </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Index </li>
+                                <li> Random </li>
+                                <li> Age </li>
+                                <li> Lifetime </li>
+                                <li> Location </li>
+                                <li> Size </li>
+                                <li> Velocity </li>
+                                <li> Angular Velocity </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RGB -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> RGB </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h4> Layer Weight </h4>
-                            Output:
-                                Blend
-                                Normal
-                            Input:
-                                Fresnel
-                                Facing
+                <!-- ROW 5 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Tangent -->
+                    <div class="col-xs-4 nodeCOL">    
+                        <div class="row nodeROWHeader">
+                            <h4> Tangent </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Tangent </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Texture Coordinate -->
+                    <div class="col-xs-4 nodeCOL">   
+                        <div class="row nodeROWHeader">   
+                            <h4> Texture Coordinate </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Generated </li>
+                                <li> Normal </li>
+                                <li> UV </li>
+                                <li> Object </li>
+                                <li> Camera </li>
+                                <li> Window </li>
+                                <li> Reflection </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- UV Map -->
+                    <div class="col-xs-4 nodeCOL">   
+                        <div class="row nodeROWHeader">                  
+                            <h4> UV Map </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> UV </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <h4> Light Path </h4>
-                            Input:
-                                Is Camera Ray
-                                Is Shadow Ray
-                                Is Diffuse Ray
-                                Is Glossy Ray
-                                Is Singular Ray
-                                Is Reflection Ray
-                                Is Transmission Ray
-                                Ray Length
-                                Ray Depth
-                                Diffuse Depth
-                                Glossy Depth
-                                Transparent Depth
-                                Transmission Depth
-
-                        <h4> Object Info </h4>
-                            Input:
-                                Location
-                                Color
-                                Object Index
-                                Material Index
-                                Random
-
-                        <h4> Particle Info </h4>
-                            Input:
-                                Index
-                                Random
-                                Age
-                                Lifetime
-                                Location
-                                Size
-                                Velocity
-                                Angular Velocity
-
-                        <h4> RGB </h4>
-                            Input:
-                                Color
-                        
-                        <h4> Tangent </h4>
-                            Input:
-                                Tangent
-                        
-                        <h4> Texture Coordinate </h4>
-                            Input:
-                                Generated
-                                Normal
-                                UV
-                                Object
-                                Camera
-                                Window
-                                Reflection
-                                
-                        <h4> UV Map </h4>
-                                Input:
-                                    UV
-
-                        <h4> Value </h4>
-                                Input:
-                                    Value
-
-                        <h4> Vertex Color </h4>
-                                Input:
-                                    Color
-                                    Alpha
-                            
-                        <h4> Volume Info <h4>
-                                Input:
-                                    Color
-                                    Density
-                                    Flame
-                                    Temperature
-
-                        <h4> Wireframe </h4>
-                                Output:
-                                    Size
-                                Input:
-                                    Fac
-                        </p>
+                <!-- ROW 6 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Value -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Value </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Value </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vertex Color -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Vertex Color </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Alpha </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Volume Info -->
+                    <div class="col-xs-4 nodeCOL">    
+                        <div class="row nodeROWHeader">               
+                            <h4> Volume Info <h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Density </li>
+                                <li> Flame </li>
+                                <li> Temperature </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wireframe -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Wireframe </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="row justify-content-around">
+                                <div class="col-xs-6 nodeCOL"> 
+                                    <b> Output: </b> 
+                                        <ul>
+                                    <li> Size </li>
+                                        </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Fac </li>
+                                    </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="SHADER">
+
+                <!-- ROW 1 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Add Shader -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Add Shader </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6">
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Shader </li> 
+                                <li> Shader </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6">
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Shader </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diffuse BSDF -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Diffuse BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Roughness </li> 
+                                <li> Normal </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> BSDF </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Emission -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Emission </h4>  
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Strength </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Emission </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Glass BSDF -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Glass BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Roughness </li> 
+                                <li> IOR </li>
+                                <li> Normal </li>
+                                    </ul> 
+                            <div class="col-xs-6 nodeCOL">
+                            </div>
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Glossy BSDF -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Glossy BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Roughness </li> 
+                                <li> Normal </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Holdout -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Holdout </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Holdout <li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Mix Shader -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Mix Shader </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Fac </li>
+                                <li> Shader </li>
+                                <li> Shader </li>
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Shader </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Principled BSDF -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Principled BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Base Color </li>
+                                <li> Subsurface </li>
+                                <li> Subsurface Radius </li>
+                                <li> Subsurface Color </li>
+                                <li> Metallic </li>
+                                <li> Specular </li>
+                                <li> Specular Tint </li>
+                                <li> Roughness </li>
+                                <li> Anisotropic </li>
+                                <li> Anisotropic Rotation </li>
+                                <li> Sheen </li>
+                                <li> Sheen Tint </li>
+                                <li> Clearcoat </li>
+                                <li> Clearcoat Roughness </li>
+                                <li> IOR </li>
+                                <li> Transmission </li>
+                                <li> Transmission Roughness </li>
+                                <li> Emission </li>
+                                <li> Alpha </li>
+                                <li> Normal </li>
+                                <li> Clearcoat Normal </li>
+                                <li> Tangent </li>
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Principled Volume -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Principled Volume </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Color Attribute </li> 
+                                <li> Density </li> 
+                                <li> Density Attribute </li> 
+                                <li> Anisotropy </li> 
+                                <li> Absorption Color </li> 
+                                <li> Emission Strength </li> 
+                                <li> Emission Color </li> 
+                                <li> Blackbody Intensity </li> 
+                                <li> Blackbody Tint </li> 
+                                <li> Temperature </li> 
+                                <li> Temperature Attribute </li> 
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                            <b> Input: </b> 
+                                <ul>
+                            <li> Volume </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 4 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Refraction BSDF -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Refraction BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Roughness </li> 
+                                <li> IOR </li>
+                                <li> Normal </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Specular -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Specular </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Base Color </li> 
+                                <li> Specular </li> 
+                                <li> Roughness </li> 
+                                <li> Emissive Color </li> 
+                                <li> Transparency </li> 
+                                <li> Normal </li> 
+                                <li> Clear Coat </li> 
+                                <li> Clear Coat </li> 
+                                <li> Clear Coat Normal </li> 
+                                <li> Ambient Occlusion </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Subsurface Scattering -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Subsurface Scattering </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li>
+                                <li> Scale </li>
+                                <li> Radius </li>
+                                <li> Texture Blur </li>
+                                <li> Normal </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSSRDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 5 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Translucent BSDF -->
+                    <div class="col-xs-4 nodeCOL">    
+                        <div class="row nodeROWHeader">
+                            <h4> Translucent BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Normal </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Transparent BSDF -->
+                    <div class="col-xs-4 nodeCOL">   
+                        <div class="row nodeROWHeader">   
+                            <h4> Transparent BSDF </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL">  
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> BSDF </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Volume Absorption -->
+                    <div class="col-xs-4 nodeCOL">   
+                        <div class="row nodeROWHeader">                  
+                            <h4> Volume Absorption </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Density </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Volume </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 6 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Volume Scaler -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Volume Scaler </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li> 
+                                <li> Density </li>
+                                <li> Anisotropy </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Volume </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>  
+                </div>    
+            </div>
+
+
+
+            <div class="TEXTURE">
+                <!-- ROW 1 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Brick Texture -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Brick Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6">
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Color1 </li>
+                                <li> Color2 </li>
+                                <li> Mortar </li>
+                                <li> Scale </li>
+                                <li> Mortar Size </li>
+                                <li> Mortar Smooth </li>
+                                <li> Bias </li>
+                                <li> Brick Width </li>
+                                <li> Row Height </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6">
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Color </li>
+                                <li> Fac </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Checker Texture -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Checker Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Color1 </li>
+                                <li> Color2 </li>
+                                <li> Scale </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Fac </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Environment Texture -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Environment Texture </h4>  
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Vector </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Gradient Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Gradient Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                    </ul> 
+                            <div class="col-xs-6 nodeCOL">
+                            </div>
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Fac </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IES Texture -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> IES Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Strength </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Fac </li> 
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Image Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color <li>
+                                <li> Alpha </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Magic Texture -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Magic Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Scale </li>
+                                <li> Distortion </li>
+
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Fac </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Musgrave Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Musgrave Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Scale </li>
+                                <li> Detail </li>
+                                <li> Dimension </li>
+                                <li> Lacunarity </li>
+
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Fac </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Noise Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Noise Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Scale </li>
+                                <li> Detail </li>
+                                <li> Distortion </li>
+                                    </ul>
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                            <b> Input: </b> 
+                                <ul>
+                            <li> Fac </li>
+                            <li> Color </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 4 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Point Density -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader"> 
+                            <h4> Point Density </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Density </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sky Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Sky Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Voronoi Texture -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Subsurface Scattering </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Scale </li>
+                                <li> Randomness </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Distance </li>
+                                <li> Color </li>
+                                <li> Position </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 5 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Wave Texture -->
+                    <div class="col-xs-4 nodeCOL">    
+                        <div class="row nodeROWHeader">
+                            <h4> Wave Texture </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li>
+                                <li> Scale </li>
+                                <li> Distortion </li>
+                                <li> Detail </li>
+                                <li> Detail Scale </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                <li> Fac </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- White Noise -->
+                    <div class="col-xs-4 nodeCOL">   
+                        <div class="row nodeROWHeader">   
+                            <h4> White Noise </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL">  
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Vector </li> 
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Value </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+
+
+            <div class="COLOR">
+                <!-- ROW 1 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Bright Contrast -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Bright Contrast </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6">
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Color </li>
+                                <li> Bright </li>
+                                <li> Contrast </li>
+                                    </ul> 
+                           </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b>
+                                    <ul>
+                                <li> Color </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hue/Saturation -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Hue/Saturation </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-2 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Hue </li>
+                                <li> Saturation </li>
+                                <li> Value </li>
+                                <li> Fac </li>
+                                <li> Color </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Invert -->
+                    <div class="col-xs-4 nodeCOL">
+                        <div class="row nodeROWHeader">
+                            <h4> Invert </h4>  
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b> 
+                                    <ul>
+                                <li> Fac </li>
+                                <li> Color </li>
+                                        </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Color </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="row justify-content-center nodeROW">
+                    <!-- Light Falloff -->
+                    <div class="col-xs-4 nodeCOL"> 
+                        <div class="row nodeROWHeader">
+                            <h4> Light Falloff </h4>
+                        </div>
+                            Hey.
+                        <div class="row justify-content-around">
+                            <div class="col-xs-6 nodeCOL"> 
+                                <b> Output: </b>
+                                    <ul>
+                                <li> Strength </li>
+                                <li> Smooth </li>
+                                    </ul> 
+                            </div>
+                            <div class="col-xs-6 nodeCOL">
+                                <b> Input: </b> 
+                                    <ul>
+                                <li> Quadratic </li>
+                                <li> Linear </li>
+                                <li> Constant </li>
+                                    </ul> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 3 -->
+                    <div class="row justify-content-center nodeROW">
+                        <!-- MixRGB -->
+                        <div class="col-xs-4 nodeCOL"> 
+                            <div class="row nodeROWHeader">
+                                <h4> MixRGB </h4>
+                            </div>
+                                Hey.
+                            <div class="row justify-content-around">
+                                <div class="col-xs-6 nodeCOL"> 
+                                    <b> Output: </b>
+                                        <ul>
+                                    <li> Fac </li>
+                                    <li> Color1 </li>
+                                    <li> Color2 </li>
+                                        </ul> 
+                                </div>
+                                <div class="col-xs-6 nodeCOL">
+                                    <b> Input: </b> 
+                                        <ul>
+                                    <li> Color </li> 
+                                        </ul> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 4 -->
+                        <div class="row justify-content-center nodeROW">
+                            <!-- RGA Curves -->
+                            <div class="col-xs-4 nodeCOL"> 
+                                <div class="row nodeROWHeader">
+                                    <h4> RGA Curves </h4>
+                                </div>
+                                    Hey.
+                                <div class="row justify-content-around">
+                                    <div class="col-xs-6 nodeCOL"> 
+                                        <b> Output: </b>
+                                            <ul>
+                                        <li> Fac </li>
+                                        <li> Color </li>
+                                            </ul> 
+                                    </div>
+                                    <div class="col-xs-6 nodeCOL">
+                                        <b> Input: </b> 
+                                            <ul>
+                                        <li> Color </li> 
+                                            </ul> 
+                                    </div>
+                                </div>
+                            </div>
+
+            </div>
+
+
+
+
         </div>
 
         <!-- Navigation FIXED icons -->
