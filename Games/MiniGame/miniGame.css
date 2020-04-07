@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: Chalkduster;
+}
+.column {
+    /* border: 5px solid cyan; */
+}
+.row {
+    /* border: 5px solid red; */
+}
+.HEADER {
+    background-image: url("https://wallpaperaccess.com/download/space-math-237658");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+.COVER {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1000px;
+}
+.display {
+    padding: 100px 200px 200px 200px;
+}
+h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1 {
+    box-shadow: 0px 1px 20px lime;
+}
+#LEVEL {
+    opacity: 0;
+    font-size: 50px;
+}
+#theInput {
+    box-shadow: 0px 1px 10px black;
+    opacity: 0;
+}
+#theInput:hover {
+    /* box-shadow: 0px 1px 50px rgba(255, 255, 0, 0.5); */
+    box-shadow: 0px 1px 20px white;
+}
+#countdown {
+    font-family: 'Digital-7', arial;
+}
+.strike1 {
+    opacity: 0;
+}
+.strike2 {
+    opacity: 0;
+}
+.strike3 {
+    opacity: 0;
+}
+#START {
+    opacity: 100;
+}
+.score {
+    opacity: 0;
+}

@@ -1,0 +1,100 @@
+<html>
+
+    <head>
+        <title> Quick Mental Math </title>
+            <!-- Link to BS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <!-- Link to CSS -->
+            <link rel="stylesheet" href="miniGame.css" />
+            <!-- Link to FONT 
+            <link href="http://allfont.net/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />-->
+    </head>
+
+<body>
+    <div class="container-fluid">
+    <div class="HEADER">
+    <div class="COVER">
+    <div class="display" id="game-over">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <!-- TIMER -->
+                <h1 id="countdown"> MENTAL MATH </h1>
+                <img src="https://1.bp.blogspot.com/-h2uNqfyCRP4/VZllcRbHXHI/AAAAAAAAPHg/OkT_3cfeseA/s1600/Tesseract_transparent%2B3.gif">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-4 column">
+                <!-- MATH CHALLENGE -->
+                <img src="https://thumbs.gfycat.com/LividDefensiveIchthyosaurs-small.gif" width=30 height=30>
+            </div>
+            <div class="col-xs-4 column">
+                <h3 id="question"> Calculate </h3>
+            </div>
+            <div class="col-xs-4 column">
+                <img src="https://thumbs.gfycat.com/LividDefensiveIchthyosaurs-small.gif" width=30 height=30>
+            </div>
+        </div>
+
+         <!-- Answer section here -->
+          <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+              <input type="textbox" id="theInput" class="" width=200 height=100 autofocus>
+            </div>
+            </div>
+
+        <!-- STRIKES -->
+        <div class="row justify-content-center">
+            <div class="col-xs-4 column">
+                <p class="strike1">😊</p>
+            </div>
+            <div class="col-xs-4 column">
+                <p class="strike2">😊</p>
+            </div>
+            <div class="col-xs-4 column">
+                <p class="strike3">😊</p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <br>
+                <input id="START" type="button" name="PLAY" value="START GAME" width=50 height=100>
+            </div>
+        </div>
+
+        <!-- THE YAY CONFETTI -->
+        <p class="confetti"></p>
+            ​
+        <!-- SCORE -->
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <p class="score">Score: <span id="displayScore"> 0 </span></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <p id="LEVEL"> 1 </p>
+            </div>
+        </div>
+    </div>
+​
+        <div id="reset-button" class="reset-button-style">
+          <button type="reset" onClick="history.go(0)">Reset</button>
+        </div>
+
+    </div>
+    </div>
+    </div>
+</body>
+
+    <script type="text/javascript" src="miniGame.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+​
+
+
+</html>
+
