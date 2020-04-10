@@ -7,61 +7,6 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <!-- Link to CSS -->
             <link rel="stylesheet" href="restaurantStyles.css" />
-        <style>
-
-            .crabROW, .fishROW, .lobsterROW, .seaweedROW, .shrimpROW, .squidROW {
-                background-color: black;
-                height: 500px;
-                width: 500px;
-                margin: 0 auto;
-                box-shadow: 0px 5px 30px white;
-            }
-
-            .MENU-BODY-2 .row {
-                background-position: center;
-                background-size: cover;
-                padding: 200px 0px 200px 0px;
-                box-shadow: 0px -25px 50px darkgreen;
-                transition-duration: 1000ms;
-            }
-            .MENU-BODY .foodChoice {
-                height: 200;
-                width: 300;
-            }
-            .MENU-BODY-2 .row:hover {
-                background-position: center;
-                background-size: cover;
-                padding: 200px 0px 200px 0px;
-                box-shadow: 0px -25px 50px orange;
-            }
-
-            .crabRow {
-                background-image: url("Crabs_Closeup_562434_6000x4500.jpg");
-            }
-            .fishRow {
-                background-image: url("767042.jpg");
-            }
-            .lobsterRow {
-                background-image: url("595a00a1954d27d774457746c3a7ebcd.jpg");
-            }
-            .seaweedRow {
-                background-image: url("seaweedROW.jpeg");
-            }
-            .shrimpRow {
-                background-image: url("shrimpROW.jpg");
-            }
-            .squidRow {
-                background-image: url("squidROW.jpg");
-            }
-
-
-
-            .cover {
-                background-color: rgba(0, 0, 0, 0.62);
-            }
-
-
-        </style>
     </head>
 
 <body>
@@ -103,19 +48,19 @@
                 <br><div class="row foodChoice">
                     <div class="col-lg-4 col-xs-3">
                         <div class="CRABS" onclick="crabScroll()">
-                            <img class="images" src="/IMAGES/crab.jpg">
+                            <img class="images" src="crab.jpg">
                             <h3>Crabs</h3>$0.99
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-3">
                         <div class="FISH" onclick="fishScroll()">
-                            <img class="images" src="/IMAGES/fish.jpg">
+                            <img class="images" src="fish.jpg">
                             <h3>Fish</h3>$0.99
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-3">
                         <div class="LOBSTER" onclick="lobsterScroll()">
-                            <img class="images" src="/IMAGES/lobster.jpg">
+                            <img class="images" src="lobster.jpg">
                             <h3>Lobster</h3>$0.99
                         </div>
                     </div>
@@ -123,140 +68,154 @@
                 <div class="row foodChoice">
                     <div class="col-lg-4 col-xs-3">
                         <div class="SEAWEED" onclick="seaweedScroll()">
-                            <img class="images2" src="/IMAGES/seaweed.jpg">
+                            <img class="images2" src="seaweed.jpg">
                             <h3>Seaweed</h3>$0.99
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-3">
                         <div class="SHRIMP" onclick="shrimpScroll()">
-                            <img class="images" src="/IMAGES/shrimp.jpg">
+                            <img class="images" src="shrimp.jpg">
                             <h3>Shrimp</h3>$0.99
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-3">
                         <div class="SQUID" onclick="squidScroll()">
-                            <img class="images2" src="/IMAGES/squid.jpg">
+                            <img class="images2" src="squid.jpg">
                             <h3>Squid</h3>$0.99
                     </div>
                 </div>
             </div><br> 
-        </div>
-        <!-- COLUMN 1: STORE INFORMATION -->
-        <div class="row storeInfo"> 
-            <div class="col-lg-12 col-xs-8">
-                <br>
-                31-10 Thomson Avenue, <br>
-                Long Island City, NY 11101 USA <br>
-                (718) 482-7200 <br>
-                <br>
-            </div>
-        </div> 
-    <div><br>
-<!-- END OF BODY -->
-<!-- BODY -->
-        <div class="container-fluid-2 MENU-BODY-2">
-            <div class="row crabRow">
-                <div class="col-12 column">
-                    <div class="crabROW">
-                    </div>
-                </div>
-            </div>
-            <div class="row fishRow">
-                <div class="col-12 column">
-                    <div class="fishROW">
-                    </div>
-                </div>
-            </div>
-            <div class="row lobsterRow">
-                <div class="col-12 column">
-                    <div class="lobsterROW">
-                    </div>
-                </div>
-            </div>
-            <div class="row seaweedRow">
-                <div class="col-12 column">
-                    <div class="seaweedROW">
-                    </div>
-                </div>
-            </div>
-            <div class="row shrimpRow">
-                <div class="col-12 column">
-                    <div class="shrimpROW">
-                    </div>
-                </div>
-            </div>
-            <div class="row squidRow">
-                <div class="col-12 column">
-                    <div class="squidROW">
-                    </div>
-                </div>
-            </div>
 
+            <!-- COLUMN 1: STORE INFORMATION -->
+            <div class="row storeInfo"> 
+                <div class="col-lg-12 col-xs-8">
+                    <br>
+                    31-10 Thomson Avenue, <br>
+                    Long Island City, NY 11101 USA <br>
+                    (718) 482-7200 <br>
+                    <br>
+                </div>
+            </div><br>
+    <!-- END OF BODY -->
+    <!-- BODY -->
+    <div class="container-fluid-2 MENU-BODY-2">
+            <div class="menuOrder" onmouseover="highlight()" onmouseout="nohighlight()">
+                <div class="row">
+                    <div class="col-12 column">
+                        <h1> Timmy Eats, You Order! </h1>
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column">
+                        <h2 style="color:red; text-shadow:0px 1px 8px red"> Standard Meal </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Alaskan King Crab <br>
+                        $0.99 | Hairy Crab <br>
+                        $0.99 | Hanasaki Crab <br>
+                        $0.99 | Red King Crab <br>
+                        $0.99 | Snow Crab <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Cod | $0.99 <br>
+                        Bass | $0.99 <br>
+                        Sardine | $0.99 <br>
+                        Sashimi | $0.99 <br>
+                        Tuna | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Blue Cheese Lobster <br>
+                        $0.99 | BLT Lobster <br>
+                        $0.99 | Lobster Burrito <br>
+                        $0.99 | Lobster Pie <br>
+                        $0.99 | Lobster Roll <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Bok Choy Mesh | $0.99 <br>
+                        Seaweed Chips | $0.99 <br>
+                        Seaweed Risotto | $0.99 <br>
+                        Seaweed Salad | $0.99 <br>
+                        Seaweed Bread | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Fried Shrimp <br>
+                        $0.99 | Garlic Shrimp <br>
+                        $0.99 | Grilled Shrimp <br>
+                        $0.99 | Honey Shrimp <br>
+                        $0.99 | Teriyaki Shrimp <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Basic Calamari | $0.99 <br>
+                        Butter Garlic Squid | $0.99 <br>
+                        Chopped Squid Mash | $0.99 <br>
+                        Crispy Squid Rings | $0.99 <br>
+                        Touchy Squid | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column"><br>
+                        <hr />
+                        <h2 style="color:orange; text-shadow:0px 1px 8px orange"> Appetizers </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        <h3> Beverages </h3>
+                        $0.99 | Bubble Tea <br>
+                        $0.99 | Soda <br>
+                        $0.99 | Sparkling Water <br>
+                        $0.99 | Syrup <br>
+                        $0.99 | Tea <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        <h3> Sides </h3>
+                        Cole Slaw | $0.99 <br>
+                        Guacamole | $0.99 <br>
+                        Mashed Potatoes | $0.99 <br>
+                        Miso Soup | $0.99 <br>
+                        Touchy Squid | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column"><br>
+                        <hr />
+                        <h2 style="text-shadow:0px 1px 8px orange"> Desserts </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        <h3> Sweet Bakes </h3>
+                        $0.99 | Banana Ice Cream <br>
+                        $0.99 | Cheese Cake <br>
+                        $0.99 | Coffee Cake <br>
+                        $0.99 | Fried Ice Cream <br>
+                        $0.99 | Plain Ice Cream <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        <h3> Fruit Salads </h3>
+                        Bananas | $0.99 <br>
+                        Blueberries | $0.99 <br>
+                        Oranges | $0.99 <br>
+                        Raspberries | $0.99 <br>
+                        Strawberries | $0.99 <br>
+                    </div>
+                </div>
+            </div>
+        
         <input id="navBTN" type="button" onclick="navScroll()">
     </div>
     <!-- END OF BODY -->
+    </div>
+    </div>
 </body>
-    <script>
-        /*
-        var value = 685;
 
-        crabRow = 970;
-        fishRow = 1655;
-        lobsterRow = 2340;
-        seaweedRow = 3025;
-        shrimpRow = 3710;
-        squidRow = 4395;
-        */
+   
 
-        window.addEventListener('scroll', test);
-
-        function crabScroll() {
-            window.scrollTo({
-                top: 970, // 1826, 2682, 3538, 4394, 5250
-                behavior: 'smooth',
-            })
-        }
-        function fishScroll() {
-            window.scrollTo({
-                top: 1826, // 1655, 2340, 3025, 3710, 4395
-                behavior: 'smooth',
-            })
-        }
-        function lobsterScroll() {
-            window.scrollTo({
-                top: 2682, // 1655, 2340, 3025, 3710, 4395
-                behavior: 'smooth',
-            })
-        }
-        function seaweedScroll() {
-            window.scrollTo({
-                top: 3552, // 1655, 2340, 3025, 3710, 4395
-                behavior: 'smooth',
-            })
-        }
-        function shrimpScroll() {
-            window.scrollTo({
-                top: 4394, // 1655, 2340, 3025, 3710, 4395
-                behavior: 'smooth',
-            })
-        }
-        function squidScroll() {
-            window.scrollTo({
-                top: 5302, // 1655, 2340, 3025, 3710, 4395
-                behavior: 'smooth',
-            })
-        }
-
-        function navScroll() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth',
-            })
-        }
-
-        function test() {
-            const scroll = window.scrollY;
-            console.log(scroll);
-        }
-    </script>
 </html>

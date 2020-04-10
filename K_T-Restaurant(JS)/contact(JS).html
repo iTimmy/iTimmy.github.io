@@ -59,13 +59,13 @@
     <form>
         <div class="row">
             <div class="col-lg-12 col-xs-8"><br>
-                Name: <input id="NAME" type="text" name="ok" value=""><br><br>
-                Email: <input id="EMAIL" type="text" name="ok" value=""><br><br>
-                Phone: <input type="text" name="ok" value=""><br><br>
+                Name: <input class="fill" id="NAME" type="text" name="ok" value=""><br><br>
+                Email: <input class="fill" id="EMAIL" type="text" name="ok" value=""><br><br>
+                Phone: <input class="fill" id="PHONE" type="text" name="ok" value=""><br><br>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 col-xs-8">
+        <div class="row justify-content-center">
+            <div class="col-12">
                 <label for="Choose">Reason for Inquiry</label><br>
                 <select id="reason">
                     <option>Catering <font color="grey">(default)</font></option>
@@ -85,7 +85,7 @@
             <div class="col-lg-12 col-xs-8">
                 Have you been to the restaurant?<br>
                 <input id="no" type="radio" value="nope" id="no" name="Q">
-                    <label for="no">No</label>
+                    <label for="no">No</label><br><br>
                 <input id="yes" type="radio" value="yeah" id="yes" name="Q">
                     <label for="yes">Yes</label><br>
                 <br>
@@ -131,10 +131,10 @@
             Hello <b id="confirmNAME">name</b>! <br>
             Please confirm if <b id="confirmMAIL">-email-</b> is where you would like to be contacted. <br>
             Your reason for inquiry is <b id="confirmRFA"> RFA </b><br>
-            You have stated: <br>
+            <!--You have stated: <br> -->
             <br>
             This is <b id="confirmNOT"></b>your first time in this restaurant. <br>
-            You prefer to be contacted on: <br>
+            <!-- You prefer to be contacted on: <br> -->
             <i id="confirmDays"></i>
         </div>
 
@@ -159,8 +159,6 @@
 
         function ALL() {
             mustFillOut();
-            formSubmit();
-            autoScroll();
         }
 
         function autoScroll() {
@@ -176,35 +174,17 @@
             confirmName.innerHTML = document.getElementById("NAME").value;
             confirmMail.innerHTML = document.getElementById("EMAIL").value;
 
-
-            var days = [];
-
-
-            if (document.getElementById("no").checked) {
-                confirmNot.innerHTML = "not ";
-            }
-
-            if (document.getElementById("MON").checked) {
-             
-            
-            }
-            if (document.getElementById("TUES").checked) {
-                confirmDays.appendChild = "Tuesday";
-            }
-            if (document.getElementById("WED").checked) {
-                confirmDays.innerHTML = "Wednesday";
-            }
-            if (document.getElementById("THURS").checked) {
-                confirmDays.innerHTML = "Thursday";
-            }
-            if (document.getElementById("FRI").checked) {
-                confirmDays.innerHTML = "Friday";
-            }
-           
+            confirmRFA.innerHTML = document.getElementById("reason").selectedIndex;
         }
         function mustFillOut() {
-            if (document.getElementById("NAME").value == "") {
-                alert("You must fill out the form!");
+
+            if (document.getElementById("NAME").value === "") {
+                alert("Enter your name.");
+            } else if (document.getElementById("EMAIL").value === "" || document.getElementById("PHONE").value === "") {
+                alert("Enter your email and your phone.");
+            } else {
+                formSubmit();
+                autoScroll();
             }
         }
     </script>

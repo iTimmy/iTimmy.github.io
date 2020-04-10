@@ -1,0 +1,96 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    background-image: url("1527785749.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 2000px;
+}
+.covering {
+    background-color: black;
+    opacity: 75%;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.75);
+}
+#loser {
+    background-image: url("fallOutSucks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+}
+.dang {
+    background-color: rgba(0, 0, 0, 0.36);
+    border: 5px solid black;
+    height: 600px;
+}
+.darn {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid black;
+}
+
+.betSection {
+    color: white;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    height: 300px;
+    width: 500px;
+}
+input {
+    font-size: 25px;
+    width: 150px;
+}
+.PLAY-PLAY {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 1px 25px green;
+    border: 1px solid green;
+}
+.PLAY-PLAY:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);   
+    box-shadow: 0px 1px 15px yellow;
+    text-shadow: 0px 1px 5px lime;   
+}
+.playButton {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 200px;
+    width: 500px;
+    margin: 0 auto;
+}
+.copyrightInfo {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: cover;
+}
+table {
+    display: none;
+    color: white;
+    text-shadow: 0px 1px 10px white;
+    background-color: black;
+    border: 2px solid lime;
+    box-shadow: 0px 1px 20px lime;
+    margin: 0 auto;
+    font-size: 30px;
+}
+#rollDie {
+    background-image: url("giphy.gif");
+}
+.CASHY, .action {
+    font-size: 20px;
+    color: white;
+}
+.number {
+    background-size: 200px 200px;
+    transition-property: background;
+    transition-duration: 1000ms;
+}
+.number:hover {
+    background-size: 500px 500px;
+}

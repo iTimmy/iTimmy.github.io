@@ -1,94 +1,10 @@
 <html>
     <head>
         <title> Lucky Sevens! </title>
+        
+        <!-- Link to CSS -->
+        <link rel="stylesheet" type="text/css" href="luckySevens.css">
     </head>
-
-    <style>
-        body {
-            margin: 0 auto;
-            text-align: center;
-            background-color: black;
-            background-image: url("1527785749.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 2000px;
-        }
-        .covering {
-            background-color: black;
-            opacity: 75%;
-        }
-
-        h1 {
-            color: rgba(255, 255, 255, 0.75);
-        }
-        #loser {
-            background-image: url("fallOutSucks.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 600px;
-        }
-        .dang {
-            background-color: rgba(0, 0, 0, 0.36);
-            border: 5px solid black;
-            height: 600px;
-        }
-        .darn {
-            background-color: rgba(0, 0, 0, 0.8);
-            border: 5px solid black;
-        }
-
-        .betSection {
-            color: white;
-            font-size: 25px;
-            background-color: rgba(0, 0, 0, 0.75);
-            margin: 0 auto;
-            height: 300px;
-            width: 500px;
-        }
-        input {
-            font-size: 25px;
-            width: 150px;
-        }
-        .PLAY-PLAY {
-            color: rgba(255, 255, 255, 0.75);
-            background-color: rgba(0, 0, 0, 0.36);
-            box-shadow: 0px 1px 25px green;
-            border: 1px solid green;
-        }
-        .PLAY-PLAY:hover {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.75);   
-            box-shadow: 0px 1px 15px yellow;
-            text-shadow: 0px 1px 5px lime;   
-        }
-        .playButton {
-            background-color: rgba(0, 0, 0, 0.75);
-            height: 200px;
-            width: 500px;
-            margin: 0 auto;
-        }
-        .copyrightInfo {
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: 500px;
-            background-color: rgba(0, 0, 0, 0.8);
-            width: cover;
-        }
-        table {
-            display: none;
-            color: white;
-            text-shadow: 0px 1px 10px white;
-            background-color: black;
-            border: 2px solid lime;
-            box-shadow: 0px 1px 20px lime;
-            margin: 0 auto;
-            font-size: 30px;
-        }
-        #rollDie {
-            background-image: url("giphy.gif");
-        }
-    </style>
 
 <body>
     <div class="container-fluid">
@@ -108,21 +24,25 @@
 
     <div class="betSection">
         <br><br><br>
-        Starting Bet:<br><br><input class="CASH-MONEY" type="text" name="bet" value="$0.00">
+        Starting Bet:<br><br><input class="BET-MONEY" type="text" name="bet" value="">
         <br><br><br>
     </div>
             <br>
     <div class="playButton">
         <br><br><br><br>
         <input class="PLAY-PLAY" type="button" name="play" value="PLAY">
+        <p class="action"> </p>
+        <i class="narrate"> </i>
     </div>
 
+    <p class="CASHY">$<b class="CASH"> </b>.00</p>
+    
     <!-- This GIF appears when "play" hits underneath play button in box -->
     <img id="rollDie" src="">
         <table>
         <tr>
             <td> Starting Bet </td>
-            <td> $<b id="a"></b> </td>
+            <td> <b id="a"></b> </td>
         </tr>
         <tr>
             <td> Total Rolls Before Going Broke </td>
@@ -130,11 +50,11 @@
         </tr>
         <tr>
             <td> Highest Amount Won </td>
-            <td> $ <b id="c"></b></td>
+            <td> <b id="c"></b></td>
         </tr>
         <tr>
             <td> Roll Count at Highest Amount Won </td>
-            <td> ### <b id="d"></b></td>
+            <td> # <b id="d"></b></td>
         </table>
 
     <div class="copyrightInfo">
@@ -146,53 +66,6 @@
     </div>
 
 </body>
-    <script>
-        var playPlay = document.querySelector(".PLAY-PLAY");
-        var cashMoney = document.querySelector(".CASH-MONEY");
-
-        cashMoney = parseInt(cashMoney);
-
-        var a = document.getElementById("a");
-        var b = document.getElementById("b");
-        var c = document.getElementById("c");
-        var d = document.getElementById("d");
-        
-        playPlay.addEventListener('click', ALL);
-           
-
-        function ALL() {
-            play();
-            
-        }
-
-        document.body.style.backgroundImage = "url('1527785749.jpeg')"; 
-
-        while (betMoney >= cashMoney) {
-
-        }
-
-        function rollDice() {
-            document.getElementById("rollDie").setAttribute("src") = "ElatedImpartialArmadillo-small.gif"
-        }
-
-        function dumb() {
-             document.body.style.backgroundImage = "url('1527785749.jpeg')";
-        }
-
-        function play() {
-            var betMoney = prompt("How many dollars are you betting?");
-            betMoney = parseInt(betMoney);
-            a.innerHTML = betMoney;
-
-
-            setTimeout(dumb, 1000);
-            document.body.style.backgroundImage = "url('giphy.gif')";
-
-            document.querySelector("table").style.display = "inline";
-
-
-           
-        }
-
-    </script>
+    <!-- Link to JS -->
+    <script type="text/javascript" src="luckySevens.js"></script>
 </html>

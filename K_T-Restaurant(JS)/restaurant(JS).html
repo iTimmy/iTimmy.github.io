@@ -25,6 +25,10 @@
             box-shadow: 0px 20px 50px black;
             transition-duration: 1000ms;
         }
+        .HEADER-BODY .s {
+            bottom: -1px;
+            cursor: s-resize;
+        }
         .HEADER-BODY:hover {
             box-shadow: 0px 20px 50px darkorange;
         }
@@ -36,9 +40,11 @@
             transition-property: background;
 
         }
-        .HEADER-SHADOW:active {
+        .HEADER-SHADOW:hover {
             background-color: rgba(0, 0, 0, 0);
-            padding-bottom: 620px;
+        }
+        .HEADER-SHADOW:active {
+            background-color: rgba(0, 0, 0, 0.75);
         }
         .ROW-1 {
             
@@ -71,6 +77,9 @@
         }
         .TAKE-ME {
             
+        }
+        .blabber {
+            padding: 0px 30px 0px 30px;
         }
         </style>
 
@@ -116,9 +125,8 @@
                 </div>
                 <!-- END OF ROW 1 -->
             </div>
-
-<a class="TAKE-ME" href="menu(JS).html"><input type="button" name="MENU" value="TAKE ME TO THE MENU"></a>
-</div>
+        <a class="TAKE-ME" href="menu(JS).html"><input type="button" name="MENU" value="TAKE ME TO THE MENU"></a>
+    </div>
 </div>
         <!-- ROW 2 -->
         <div class="ROW-2">
@@ -234,45 +242,8 @@
     </div>
     <!-- END OF BODY -->
 </body>
+
     <!-- Link to JS -->
-    <script>
-        let header = document.querySelector("h1");
-        let text = document.createTextNode("AHHHHHHHHHHH!");
-        let headerShadow = document.querySelector(".HEADER-SHADOW");
-        let headerBody = document.querySelector(".HEADER-BODY");
-        // let takeMe = document.querySelector(".TAKE-ME");
+    <script type="text/javascript" src="restaurantScript.js"></script>
 
-        function imgShuffle() {
-
-            console.log("ok");
-
-            setTimeout(action1, 1000);
-            setTimeout(action2, 5000);
-            setTimeout(action3, 10000);
-
-        }
-        function action1() {
-            headerBody.style.backgroundImage = "url('ss1.jpg')";
-        }
-        function action2() {
-            headerBody.style.backgroundImage = "url('ss2.jpg')";
-        }
-        function action3() {
-            headerBody.style.backgroundImage = "url('ss3.jpg')";
-        }
-        function original() {
-            headerBody.style.backgroundImage = "url('home.jpg')";
-        }
-
-        function imgShuffling() {
-            var value;
-            value = Math.round(Math.random(0, 2) * 2);
-            console.log(value);
-            var ar = ["url('theme-3.jpg')", "url('board.jpg')", "url('glacier.jpg')", "url('unnamed.jpg')"];
-            document.querySelector(".HOME-BODY").style.backgroundImage = ar[value];
-        }
-
-
-
-    </script>
 </html>

@@ -8,6 +8,7 @@ body {
     width: 1200px;
     text-align: center;
     margin: 0 auto;
+    background-color: black;
 }
 .display {
     font-family: Verdana;
@@ -91,6 +92,6 @@ label {
 input[type="textbox"] {
     text-align: center;
 }
-.theAnswer {
+.theAnswer, .texty {
     display: none;
 }

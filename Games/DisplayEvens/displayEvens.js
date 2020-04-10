@@ -1,63 +1,96 @@
+// IDK
+var value = 0;
+var num = 1;
+
+////////// ALL INIT ////////////
+// INIT: Display Evens BTN
 var btnDisplay = document.getElementById("btnDisplay");
 
-var startNum = document.getElementById("startNum");
-var endNum = document.getElementById("endNum");
-var step = document.getElementById("step");
-
+// INIT: Display the values in sentence when BTN pressed
 var a = document.querySelector(".a");
 var b = document.querySelector(".b");
 var c = document.querySelector(".c");
 
-var num = 1;
-
+// INIT: RESET BUTTON
 var reset = document.getElementById("reset");
 
+// INIT: DISPLAYS EVEN VALUES WHEN BTN PRESSED
 var disEvens = document.getElementById("disEvens");
-var value = 0;
 
-btnDisplay.addEventListener('click', ALL);
-reset.addEventListener('click', AGAIN);
-
-
-function ALL() {
+////////// EVENT LISTENERS ////////////
+// Display Evens
+btnDisplay.addEventListener('click', function ALL() {
     displayEvens();
-    setTimeout(displayEvens1, 1000);
-}
+});
+// Reset
+reset.addEventListener('click', function AGAIN() {
+    window.location.reload(true);
+});
 
-
+// EXE: 2
 function displayEvens() {
-   
-        if (startNum.value > endNum.value) {
+    console.log("startNum: " + Number(document.getElementById("startNum").value));
+    console.log("endNum: " + Number(document.getElementById("endNum").value));
+    console.log("step: " + Number(document.getElementById("step").value));
+        if (startNum > endNum) {
             alert("Your starting number has to be less than the ending number!");
         } else {
-            a.innerHTML = startNum.value;
-            b.innerHTML = endNum.value;
-            c.innerHTML = step.value;
-        }
-
-        document.querySelector(".decor").style.backgroundImage = "url('VillainousEvenAfricanharrierhawk-size_restricted.gif')";
+            a.innerHTML = Number(document.getElementById("startNum").value);
+            b.innerHTML = Number(document.getElementById("endNum").value);
+            c.innerHTML = Number(document.getElementById("step").value);
+            document.querySelector(".decor").style.backgroundImage = "url('VillainousEvenAfricanharrierhawk-size_restricted.gif')";
         themeChange();
+            setTimeout(displayEvens1, 1000);
+            fucksake();
+    }
+}
 
-    //for (var a = 1; a < 4; a++) {
-        for (var i = 1; i < endNum.value; i += 2) {
-            var ar = [];
-            ar[0 + i] = 1;
-            ar[ar.length] = i;
-            console.log(i);
-            console.log(ar);
+// EXE: 3
+function fucksake() {
+    var text, e; // text: display | e: <br> element
+    // disEvens.appendChild(text);
+    console.log("startNum with step");
+    // logic
+    var math1 = Number(document.getElementById("startNum").value);
+    console.log("startNum: " + math1);
+
+    // should execute thrice only
+    for (var i = 0; i < 3; i++) {
+        // finds evens
+        // logic
+        while (math1 < Number(document.getElementById("endNum").value)) {
+            console.log(math1);
+            // logic
+            math1 += Number(document.getElementById("step").value); // 6 times
+            var checkDis = math1 % 2;
+            if (checkDis == 0 && math1 < Number(document.getElementById("endNum").value)) {
+                // display
+                text = document.createTextNode(math1);
+                e = document.createElement("br");
+                disEvens.appendChild(text);
+                disEvens.appendChild(e);
+            } else {
+            }
         }
-    //}
+    }
+    //disEvens.innerHTML = math1;
     document.querySelector(".theAnswer").style.display = "inline";
 }
 
+function clearDisplay() {
+    // clears display
+    disEvens.innerHTML = "yo";
+}
+
+function inputNum() {
+    if (Number(document.getElementById("startNum").value) == String)
+        alert("You must input a number.");
+}
+
+// quick background change
 function displayEvens1() {
     document.querySelector(".decor").style.backgroundImage = "none";
 }
-
-function AGAIN() {
-    window.location.reload(true);
-}
-
 function themeChange() {
     document.querySelector(".display").style.color = "#ADFF2F";
 }
