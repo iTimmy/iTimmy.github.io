@@ -43,7 +43,7 @@ function play() {
         betMoney.style.boxShadow = "0px 1px 10px blue";
         rollDie();
         //style
-        document.body.style.backgroundImage = "url('giphy.gif')";
+        document.body.style.backgroundImage = "url('ElatedImpartialArmadillo-small.gif')";
         setTimeout(dumb, 1000);
     }
 }
