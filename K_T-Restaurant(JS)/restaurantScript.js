@@ -20,12 +20,12 @@ function navStick() {
         console.log("yes");
         document.querySelector(".RESTAURANT-header").style.position = "fixed";
         document.querySelector(".RESTAURANT-header").style.cursor = "pointer";
-        document.querySelector(".RESTAURANT-header").style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+        document.querySelector(".RESTAURANT-header").style.backgroundColor = "rgba(0, 0, 0)";
     } else if (scroll <= 840) {
         console.log("no");
         document.querySelector(".RESTAURANT-header").style.removeProperty("position");
         document.querySelector(".RESTAURANT-header").style.removeProperty("cursor"); 
-        document.querySelector(".RESTAURANT-header").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        document.querySelector(".RESTAURANT-header").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
     }
 }
 
