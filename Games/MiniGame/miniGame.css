@@ -63,3 +63,6 @@ h1 {
 .score {
     opacity: 0;
 }
+input[type="textbox"] {
+    text-align: center;
+}

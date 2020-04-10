@@ -18,10 +18,11 @@ body {
 .RESTAURANT-header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-family: Verdana;
+    font-family: Tropical
 }
 h1 {
-    font-family: Chalkduster, fantasy;
+    font-family: Tomatoes;
+    text-decoration: underline;
 }
 h2 {
     font-size: 25px;
@@ -29,7 +30,12 @@ h2 {
 }
 .navLinks {
     text-align: left;
-    font-size: 18px;
+    font-size: 25px;
+}
+@media (max-width: 700px) {
+    .navLinks {
+        text-align: center;
+    }
 }
 /*-----------------------HEADLINE----------------------*/
 hr {
@@ -74,6 +80,7 @@ h3:hover {
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    height: 5000px;
 }
 .black-line {
     background-color: rgba(0, 0, 0, 0.8);
@@ -98,37 +105,44 @@ h3:hover {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    height: 1082px;
 }
 .contactSection {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.click:hover {
-    background-color: black;
-    opacity: 0.5;
-    font-size: 20px;
-    padding: 12px 28px;
-    border-radius: 50%;
+.send:hover {
+    color: white;
+    box-shadow: 0px 20px 50px teal;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /*-----------------------WRITING-----------------------*/
 .sectionWrite {
     color: white;
-    background-color: rgba(0, 0, 0, 0.36);
+    background-color: rgba(0, 0, 0, 0.38);
     opacity: 100%;
-    border: 5px solid rgba(0, 0, 0, 0.36);
     border-radius: 5%;
-    font-size: 15px;
-    font-family: Chalkduster, fantasy;
-    width: 530px;
-    height: 450px;
+    font-size: 18px;
+    font-family: Nightmare;
+    width: 600px;
+    height: 600px;
     content: 50px, 50px, 50px, 50px;
+}
+.sectionWrite p, .blabber {
+    text-align: justify;
+    font-family: Nightmare;
+    width: 450px;
+    margin: 0 auto;
+}
+.blabber {
+    border-radius: 3%;
 }
 /*-----------------------IMAGES------------------------*/
 .candleImg {
     border-radius: 5%;
     nav-up: auto;
     margin: 0 auto;
-    width: 500px;
-    height: 450px;
+    width: 600px;
+    height: 600px;
     box-shadow: -8px 20px 2px black;
     box-shadow: -10px 20px 2px black;
     box-shadow: -20px 20px 50px black;
@@ -154,8 +168,42 @@ a:active {
     color: yellow;
 }
 .storeInfo {
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: Tropical;
+}
+/* BUTTON */
+#navBTN {
+    background-image: url("navIcon.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    cursor: pointer;
+    bottom: 10px;
+    margin: 0 auto;
+    opacity: 25%;
+    left: 95%;
+}
+
+@media (max-width: 500px) {
+    #navBTN {
+        left: 40%;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #navBTN {
+        left: 90%;
+    }
+}
+
+#navBTN:hover {
+    opacity: 75%;
 }
 /*-----------------------THE-END-----------------------*/
 .column {
@@ -175,4 +223,24 @@ column p {
 }
 .ROWW h2 {
     background-color: rgba(0, 0, 0, 0.88);
+}
+/*-- FONT FACES --*/
+@font-face {
+    font-family: "Tomatoes";
+    src: url("Tomatoes-O8L8.ttf");
+}
+
+@font-face {
+    font-family: "Tropical";
+    src: url("TropicalAsianDemoRegular-11V0.ttf");
+}
+
+@font-face {
+    font-family: "Nightmare";
+    src: url("NightmarePills-BV2w.ttf");
+}
+
+@font-face {
+    font-family: "Fall";
+    src: url("FallIsComingRegular-Mx9B.ttf");
 }

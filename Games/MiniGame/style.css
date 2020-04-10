@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: Chalkduster;
+}
+.column {
+    /* border: 5px solid cyan; */
+}
+.row {
+    /* border: 5px solid red; */
+}
+.HEADER {
+    background-image: url("trippy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+}
+.COVER {
+    /* background-color: rgba(0, 255, 0, 0.6); */
+    height: 1000px;
+}
+.display {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 350px;
+    margin: 0 auto;
+    background-position: center;
+    
+}
+h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1 {
+    box-shadow: 0px 1px 20px lime;
+}
+input {
+    color: yellow;
+    box-shadow: 0px 1px 10px yellow;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+input:hover {
+    /* box-shadow: 0px 1px 50px rgba(255, 255, 0, 0.5); */
+    box-shadow: 0px 1px 20px white;
+}
+#back-button {
+    color: orange;
+    box-shadow: 0px 1px 10px orange;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*
+   <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <!-- TIMER -->
+                <h1 id="countdown"> MENTAL MATH </h1>
+                <img src="https://1.bp.blogspot.com/-h2uNqfyCRP4/VZllcRbHXHI/AAAAAAAAPHg/OkT_3cfeseA/s1600/Tesseract_transparent%2B3.gif">
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <br>
+                <input type="button" onClick="miniGame.html" name="PLAY" value="LET'S PLAY" width=50 height=100>
+            </div>
+        </div>
+​
+        <div id="back-button" class="back-button-style">
+          <button type="BACK" onClick="history.go(0)">BACK</button>
+        </div> 
+        */

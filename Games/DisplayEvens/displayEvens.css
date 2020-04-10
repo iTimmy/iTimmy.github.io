@@ -1,0 +1,96 @@
+body {
+    background-image: url("unnamed.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.display {
+    font-family: Verdana;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 100px 0px 200px 0px;
+    height: 500px;
+}
+
+h1 {
+    font-family: square;
+    text-shadow: 0px 2px 8px rgb(94, 255, 94);
+}
+
+@font-face {
+    font-family: 'square';
+    src: url(square_sans_serif_7.ttf);
+}
+
+@font-face {
+    font-family: 'led';
+    src: url(led_sans.ttf);
+}
+
+.cover {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-position: center;
+    height: 1200px;
+    width: 1200px;
+}
+.decor {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+input {
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 150px;
+    box-shadow: 0px 1px 10px white;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+input:hover {
+    background-color: black;
+}
+
+#btnDisplay {
+    color: lime;
+    text-shadow: 0px 2px 10px lime;
+    box-shadow: 0px 1px 20px lime;
+}
+#reset {
+    color: #ADFF2F;
+    text-shadow: 0px 2px 10px #ADFF2F;
+    box-shadow: 0px 1px 20px #ADFF2F;
+}
+#reset:hover {
+    color: red;
+    text-shadow: 0px 2px 10px red;
+    box-shadow: 0px 1px 20px red;
+}
+#btnDisplay:hover {
+    box-shadow: 0px 2px 50px rgb(145, 255, 0);
+    color: #ADFF2F;
+    text-shadow: 0px 2px 10px #ADFF2F;
+}
+label {
+    position: absolute;
+    text-align: center;
+}
+input[type="textbox"] {
+    text-align: center;
+}
+.theAnswer {
+    display: none;
+}

@@ -8,15 +8,59 @@
             <!-- Link to CSS -->
             <link rel="stylesheet" href="restaurantStyles.css" />
         <style>
-            .RESTAURANT-header {
-                background-color: rgba(0, 0, 0, 0.86);
-                color: white;
-                font-family: Verdana;
+
+            .crabROW, .fishROW, .lobsterROW, .seaweedROW, .shrimpROW, .squidROW {
+                background-color: black;
+                height: 500px;
+                width: 500px;
+                margin: 0 auto;
+                box-shadow: 0px 5px 30px white;
             }
-            .storeInfo {
-                font-size: 15px;
-                background-color: rgba(0, 0, 0, 0.82);
+
+            .MENU-BODY-2 .row {
+                background-position: center;
+                background-size: cover;
+                padding: 200px 0px 200px 0px;
+                box-shadow: 0px -25px 50px darkgreen;
+                transition-duration: 1000ms;
             }
+            .MENU-BODY .foodChoice {
+                height: 200;
+                width: 300;
+            }
+            .MENU-BODY-2 .row:hover {
+                background-position: center;
+                background-size: cover;
+                padding: 200px 0px 200px 0px;
+                box-shadow: 0px -25px 50px orange;
+            }
+
+            .crabRow {
+                background-image: url("Crabs_Closeup_562434_6000x4500.jpg");
+            }
+            .fishRow {
+                background-image: url("767042.jpg");
+            }
+            .lobsterRow {
+                background-image: url("595a00a1954d27d774457746c3a7ebcd.jpg");
+            }
+            .seaweedRow {
+                background-image: url("seaweedROW.jpeg");
+            }
+            .shrimpRow {
+                background-image: url("shrimpROW.jpg");
+            }
+            .squidRow {
+                background-image: url("squidROW.jpg");
+            }
+
+
+
+            .cover {
+                background-color: rgba(0, 0, 0, 0.62);
+            }
+
+
         </style>
     </head>
 
@@ -24,13 +68,11 @@
     <!-- BODY -->
     <div class="MENU-BODY">
         <!-- START: GRID 1 -->
-        <div class="container-fluid">
-            <!-- START: GRID 2 -->
-            <div class="container-fluid-1">
+        <div class="container-fluid cover">
                 <!-- ROW 1 -->
                 <div class="row">
                     <!-- COLUMN 1 -->
-                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12 column">
                         <!-- CURRENT PAGE -->
                         <div class="RESTAURANT-header">
                             <div class="current">
@@ -45,99 +87,176 @@
                                 <a href="menu(JS).html">Menu</a> |
                                 <a href="contact(JS).html">Contact Us</a>
                                 </div>
-                        </div>
-                        <br>
+                        </div><br>
                     </div>
-                    <!-- END OF COLUMN 1 -->
                 </div>
-                <!-- END OF ROW 1 -->
 
-                <!-- ROW 2 -->
+                <!-- Main IDEA -->
                 <div class="row">
-                    <!-- COLUMN 1 -->
-                    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12 column">
                         <p class="black-line"><br>
                             We primarily sell lobsters, shrimp, crabs, and all kinds of fish. Enjoy.<br><br>
                         </p>
                     </div>
-                    <!-- END OF COLUMN 1 -->
                 </div>
-                <!-- END OF ROW 2 -->
-
-                <!-- ROW 3 -->
-                <div class="row">
-                    <!-- COLUMN 1 -->
+                <!-- Food Choices -->
+                <br><div class="row foodChoice">
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images" src="/IMAGES/crab.jpg" height=200 width=300>
-                        <h3>Crabs</h3>$0.99
+                        <div class="CRABS" onclick="crabScroll()">
+                            <img class="images" src="/IMAGES/crab.jpg">
+                            <h3>Crabs</h3>$0.99
+                        </div>
                     </div>
-                    <!-- END OF COLUMN 1 -->
-                    <!-- COLUMN 2 -->
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images" src="/IMAGES/fish.jpg" height=200 width=300>
-                        <h3>Fish</h3>$0.99
+                        <div class="FISH" onclick="fishScroll()">
+                            <img class="images" src="/IMAGES/fish.jpg">
+                            <h3>Fish</h3>$0.99
+                        </div>
                     </div>
-                    <!-- END OF COLUMN 2 -->
-                    <!-- COLUMN 3 -->
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images" src="/IMAGES/lobster.jpg" height=200 width=300>
-                        <h3>Lobster</h3>$0.99
+                        <div class="LOBSTER" onclick="lobsterScroll()">
+                            <img class="images" src="/IMAGES/lobster.jpg">
+                            <h3>Lobster</h3>$0.99
+                        </div>
                     </div>
-                    <!-- END OF COLUMN 3 -->
                 </div>
-                <!-- END OF ROW 3 -->
-
-                <!-- ROW 4 -->
-                <div class="row">
-                    <!-- COLUMN 1 -->
+                <div class="row foodChoice">
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images2" src="/IMAGES/seaweed.jpg" height=200 width=300>
-                        <h3>Seaweed</h3>$0.99
+                        <div class="SEAWEED" onclick="seaweedScroll()">
+                            <img class="images2" src="/IMAGES/seaweed.jpg">
+                            <h3>Seaweed</h3>$0.99
+                        </div>
                     </div>
-                    <!-- END OF COLUMN 1 -->
-                    <!-- COLUMN 2 -->
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images" src="/IMAGES/shrimp.jpg" height=200 width=300>
-                        <h3>Shrimp</h3>$0.99
+                        <div class="SHRIMP" onclick="shrimpScroll()">
+                            <img class="images" src="/IMAGES/shrimp.jpg">
+                            <h3>Shrimp</h3>$0.99
+                        </div>
                     </div>
-                    <!-- END OF COLUMN 2 -->
-                    <!-- COLUMN 3 -->
                     <div class="col-lg-4 col-xs-3">
-                        <img class="images2" src="/IMAGES/squid.jpg" height=200 width=300>
-                        <h3>Squid</h3>$0.99
+                        <div class="SQUID" onclick="squidScroll()">
+                            <img class="images2" src="/IMAGES/squid.jpg">
+                            <h3>Squid</h3>$0.99
                     </div>
-                    <!-- END OF COLUMN 3 -->
-                </div> 
-                <!-- END OF ROW 4 -->
+                </div>
+            </div><br> 
+        </div>
+        <!-- COLUMN 1: STORE INFORMATION -->
+        <div class="row storeInfo"> 
+            <div class="col-lg-12 col-xs-8">
                 <br>
-            </div> 
-            <!-- END: GRID 2 -->
-        </div>
-        <!-- END: GRID 1 -->
-    <div>
+                31-10 Thomson Avenue, <br>
+                Long Island City, NY 11101 USA <br>
+                (718) 482-7200 <br>
+                <br>
+            </div>
+        </div> 
+    <div><br>
 <!-- END OF BODY -->
-
-    <!-- BODY -->
-    <div class="MENU-BODY-2">
-        <!-- START: GRID 3 -->
-        <div class="container-fluid-2"><br>
-            <!-- ROW 5 -->
-            <div class="row"> 
-                <!-- COLUMN 1: STORE INFORMATION -->
-                <div class="col-lg-12 col-xs-8">
-                    <div class="storeInfo">
-                        <br>
-                        31-10 Thomson Avenue, <br>
-                        Long Island City, NY 11101 USA <br>
-                        (718) 482-7200 <br>
-                        <br>
+<!-- BODY -->
+        <div class="container-fluid-2 MENU-BODY-2">
+            <div class="row crabRow">
+                <div class="col-12 column">
+                    <div class="crabROW">
                     </div>
                 </div>
-                <!-- END OF COLUMN 1 -->
-            </div> 
-            <!-- END OF ROW 5 -->
-        </div>
-        <!-- END: GRID 3 -->
+            </div>
+            <div class="row fishRow">
+                <div class="col-12 column">
+                    <div class="fishROW">
+                    </div>
+                </div>
+            </div>
+            <div class="row lobsterRow">
+                <div class="col-12 column">
+                    <div class="lobsterROW">
+                    </div>
+                </div>
+            </div>
+            <div class="row seaweedRow">
+                <div class="col-12 column">
+                    <div class="seaweedROW">
+                    </div>
+                </div>
+            </div>
+            <div class="row shrimpRow">
+                <div class="col-12 column">
+                    <div class="shrimpROW">
+                    </div>
+                </div>
+            </div>
+            <div class="row squidRow">
+                <div class="col-12 column">
+                    <div class="squidROW">
+                    </div>
+                </div>
+            </div>
+
+        <input id="navBTN" type="button" onclick="navScroll()">
     </div>
     <!-- END OF BODY -->
 </body>
+    <script>
+        /*
+        var value = 685;
+
+        crabRow = 970;
+        fishRow = 1655;
+        lobsterRow = 2340;
+        seaweedRow = 3025;
+        shrimpRow = 3710;
+        squidRow = 4395;
+        */
+
+        window.addEventListener('scroll', test);
+
+        function crabScroll() {
+            window.scrollTo({
+                top: 970, // 1826, 2682, 3538, 4394, 5250
+                behavior: 'smooth',
+            })
+        }
+        function fishScroll() {
+            window.scrollTo({
+                top: 1826, // 1655, 2340, 3025, 3710, 4395
+                behavior: 'smooth',
+            })
+        }
+        function lobsterScroll() {
+            window.scrollTo({
+                top: 2682, // 1655, 2340, 3025, 3710, 4395
+                behavior: 'smooth',
+            })
+        }
+        function seaweedScroll() {
+            window.scrollTo({
+                top: 3552, // 1655, 2340, 3025, 3710, 4395
+                behavior: 'smooth',
+            })
+        }
+        function shrimpScroll() {
+            window.scrollTo({
+                top: 4394, // 1655, 2340, 3025, 3710, 4395
+                behavior: 'smooth',
+            })
+        }
+        function squidScroll() {
+            window.scrollTo({
+                top: 5302, // 1655, 2340, 3025, 3710, 4395
+                behavior: 'smooth',
+            })
+        }
+
+        function navScroll() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        }
+
+        function test() {
+            const scroll = window.scrollY;
+            console.log(scroll);
+        }
+    </script>
+</html>

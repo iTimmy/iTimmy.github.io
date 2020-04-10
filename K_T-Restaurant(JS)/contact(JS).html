@@ -13,181 +13,199 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        display: none;
+        text-align: center;
+        padding: 300px 0px 300px 0px;
+    }
+    label {
+        position: absolute;
+        text-align: center;
+    }
+    input {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contact-submission-form p {
+        text-align: justify;
     }
 
 </style>
 <!-- if 'send request' button is submitted, the page should automatically scroll you into the contact-submission-form below undersea -->
 <body>
     <!-- BODY -->
-    <div class="CONTACT-BODY">
-        <!-- START: GRID -->
-        <div class="container-fluid">
-            <!-- ROW 1 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    <!-- CURRENT PAGE -->
-                    <div class="RESTAURANT-header">
-                        <div class="current">
-                        Contact Us
-                        </div>
-
-                        <!-- TOP TITLE -->
-                        <h1> Timmy Eats </h1>
-                            <!-- NAVIGATION LINKS -->
-                            <div class="navLinks">
-                            <a href="restaurant(JS).html">Home</a> |
-                            <a href="menu(JS).html">Menu</a> |
-                            <a href="contact(JS).html">Contact Us</a>
-                            </div>
+    <div class="container-fluid CONTACT-BODY">
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                <!-- CURRENT PAGE -->
+                <div class="RESTAURANT-header">
+                    <div class="current">
+                    Contact Us
                     </div>
-                <br>
-                </div> 
-                <!-- END OF COLUMN 1 -->
+
+                    <!-- TOP TITLE -->
+                    <h1> Timmy Eats </h1>
+                        <!-- NAVIGATION LINKS -->
+                    <div class="navLinks">
+                        <a href="restaurant(JS).html">Home</a> |
+                        <a href="menu(JS).html">Menu</a> |
+                        <a href="contact(JS).html">Contact Us</a>
+                    </div>
+                </div><br>
             </div> 
-            <!-- END OF ROW 1 -->
+        </div> 
 
         <!-- FORM: LAYOUT -->
-        <div class="contactSection">
-            <!-- ROW 2 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    <!-- FORM: LAYOUT -->
-                        <br>
-                        Name: <input id="NAME" type="text" name="ok" value=""><br><br>
-                        Email: <input type="text" name="ok" value=""><br><br>
-                        Phone: <input type="text" name="ok" value=""><br><br>
-                </div>
-                <!-- END OF COLUMN 1 -->
+    <div class="contactSection">
+    <form>
+        <div class="row">
+            <div class="col-lg-12 col-xs-8"><br>
+                Name: <input id="NAME" type="text" name="ok" value=""><br><br>
+                Email: <input id="EMAIL" type="text" name="ok" value=""><br><br>
+                Phone: <input type="text" name="ok" value=""><br><br>
             </div>
-            <!-- END OF ROW 2 -->
-
-            <!-- ROW 3 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    <label for="Choose">Reason for Inquiry</label><br>
-                    <select id="reason">
-                        <option>Catering <font color="grey">(default)</font></option>
-                        <option>Private Party</option>
-                        <option>Feedback</option>
-                        <option>Others</option>
-                    </select><br><br>
-                </div>
-                <!-- END OF COLUMN 1 -->
-            </div>
-            <!-- END OF ROW 3 -->
-
-            <!-- ROW 4 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    Additional Information:<br>
-                    <textarea id="ok"></textarea><br><br>
-                </div>
-                
-                <!-- COLUMN 2 -->
-                <form action="contact.html" method="POST">
-                <div id="Submit"></div><br>
-                <!-- END OF COLUMN 1 & 2 -->
-            </div>
-            <!-- END OF ROW 4 -->
-
-            <!-- ROW 5 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    Have you been to the restaurant?<br>
-                    <input type="radio" value="nope" id="no" name="Q">
-                        <label for="no">No</label>
-                    <input type="radio" value="yeah" id="yes" name="Q">
-                        <label for="yes">Yes</label><br>
-                    <br>
-                </div>
-                <!-- END OF COLUMN 1 -->
-            </div>
-            <!-- END OF ROW 5 -->
-
-            <!-- ROW 6 -->
-            <div class="row">
-                <!-- COLUMN 1 -->
-                <div class="col-lg-12 col-xs-8">
-                    Best days for contact:<br>
-                    <input type="checkbox" value="Mon">Mon 
-                    <input type="checkbox" value="Tues">Tues 
-                    <input type="checkbox" value="Wed">Wed 
-                    <input type="checkbox" value="Thurs">Thurs 
-                    <input type="checkbox" value="Fri">Fri<br><br>
-                </div>
-                <!-- END OF COLUMN 1 -->
-            </div>
-            <!-- END OF ROW 6 -->
-
-            <!-- ROW 7 -->
-            <div class="row">
-                <!-- FORM: SUBMIT BUTTON -->
-                <div class="col-lg-12 col-xs-8">
-                    <div class="click">
-                        <input class="send" onclick="formSubmit()" type="button" name="Send Request" value="Send Request">
-                    </div>
-                    <br>
-                </div>
-                <!-- END OF COLUMN 1 -->
-            </div>
-            <!-- END OF ROW 7 -->
         </div>
-
-            <!-- ROW 8 -->
-            <div class="row">
-                <!-- BOOTSTRAP COLUMN 6: STORE INFORMATION -->
-                <div class="col-lg-12 col-xs-8">
-                    <div class="storeInfo">
-                        <br>
-                        31-10 Thomson Avenue, <br>
-                        Long Island City, NY 11101 USA <br>
-                        (718) 482-7200 <br>
-                        <br>
-                    </div>
-                </div>
-                <!-- END OF COLUMN 1 -->
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                <label for="Choose">Reason for Inquiry</label><br>
+                <select id="reason">
+                    <option>Catering <font color="grey">(default)</font></option>
+                    <option>Private Party</option>
+                    <option>Feedback</option>
+                    <option>Others</option>
+                </select><br><br>
             </div>
-            <!-- END OF ROW 8 -->
         </div>
-        <!-- END: GRID -->
-
-
-
-    <div class="contact-submission-form">
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <p> Is this information correct? </p>
-        <br>
-        Hello <p class="confirmNAME">name</p> <br>
-        Please confirm if -email- is where you would like to be contacted. <br>
-        Your reason for inquiry is -RFI- <br>
-        You have stated: <br>
-        <br>
-        This is -not- your first time in this restaurant. <br>
-        You prefer to be contacted on: <br>
-        - days -
-        <br><br><br><br><br><br><br><br><br><br><br>
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                Additional Information:<br>
+                <textarea id="ok" value="ok"></textarea><br><br>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                Have you been to the restaurant?<br>
+                <input id="no" type="radio" value="nope" id="no" name="Q">
+                    <label for="no">No</label>
+                <input id="yes" type="radio" value="yeah" id="yes" name="Q">
+                    <label for="yes">Yes</label><br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                Best days for contact:<br>
+                <input id="MON" type="checkbox" value="Mon">Mon 
+                <input id="TUES" type="checkbox" value="Tues">Tues 
+                <input id="WED" type="checkbox" value="Wed">Wed 
+                <input id="THURS" type="checkbox" value="Thurs">Thurs 
+                <input id="FRI" type="checkbox" value="Fri">Fri<br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xs-8">
+                <div class="click">
+                    <input class="send" onclick="ALL()" type="button" name="Send Request" value="Send Request">
+                </div>
+                <br>
+            </div>
+        </div>
+    </form>
     </div>
 
+        <!-- STORE INFORMATION -->
+        <div class="row storeInfo">
+            <div class="col-lg-12 col-xs-8">
+                <br>
+                31-10 Thomson Avenue, <br>
+                Long Island City, NY 11101 USA <br>
+                (718) 482-7200 <br>
+                <br>
+            </div>
+        </div>
+    
+        <!-- END: GRID -->
+        <div class="contact-submission-form">
+            <h1> Timmy Eats </h1>
+            <h3> Is this information correct? </h3>
+            <br>
+            Hello <b id="confirmNAME">name</b>! <br>
+            Please confirm if <b id="confirmMAIL">-email-</b> is where you would like to be contacted. <br>
+            Your reason for inquiry is <b id="confirmRFA"> RFA </b><br>
+            You have stated: <br>
+            <br>
+            This is <b id="confirmNOT"></b>your first time in this restaurant. <br>
+            You prefer to be contacted on: <br>
+            <i id="confirmDays"></i>
+        </div>
 
-
+        <input id="navBTN" type="button" onclick="navScroll()">
     </div>
     <!-- END OF BODY -->
 </body>
     <script>
-        var nameData = document.getElementById("NAME").value;
-        var confirmName = document.querySelector(".confirmNAME");
+        var CSF = document.querySelector(".contact-submission-form");
 
-        var SEND = document.querySelector(".send");
+        var confirmName = document.getElementById("confirmNAME");
+        var confirmMail = document.getElementById("confirmMAIL");
+        var confirmRFA = document.getElementById("confirmRFA");
+        var confirmNot = document.getElementById("confirmNOT");
+        var confirmDays = document.getElementById("confirmDays");
 
-        send.addEventListener();
+        window.addEventListener('scroll', test);
+        function test() {
+            const scroll = window.scrollY;
+            console.log(scroll);
+        }
+
+        function ALL() {
+            mustFillOut();
+            formSubmit();
+            autoScroll();
+        }
+
+        function autoScroll() {
+            window.scrollTo ({
+                top: 1100,
+                behavior: 'smooth',
+            })
+        }
 
         function formSubmit() {
-            nameData.appendChild(confirmName);
+            CSF.style.display = "block";
+            CSF.style.backgroundImage = "url('home2.jpg')";
+            confirmName.innerHTML = document.getElementById("NAME").value;
+            confirmMail.innerHTML = document.getElementById("EMAIL").value;
+
+
+            var days = [];
+
+
+            if (document.getElementById("no").checked) {
+                confirmNot.innerHTML = "not ";
+            }
+
+            if (document.getElementById("MON").checked) {
+             
+            
+            }
+            if (document.getElementById("TUES").checked) {
+                confirmDays.appendChild = "Tuesday";
+            }
+            if (document.getElementById("WED").checked) {
+                confirmDays.innerHTML = "Wednesday";
+            }
+            if (document.getElementById("THURS").checked) {
+                confirmDays.innerHTML = "Thursday";
+            }
+            if (document.getElementById("FRI").checked) {
+                confirmDays.innerHTML = "Friday";
+            }
+           
+        }
+        function mustFillOut() {
+            if (document.getElementById("NAME").value == "") {
+                alert("You must fill out the form!");
+            }
         }
     </script>
 </html>

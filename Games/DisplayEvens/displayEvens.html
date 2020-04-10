@@ -2,59 +2,51 @@
 
     <head>
         <title> Display Evens </title>
+
+        <!-- Link to BS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Link to CSS -->
+        <link rel="stylesheet" type="text/css" href="displayEvens.css">
     </head>
 
-    <link href="https://www.1001fonts.com/square-sans-serif-7-font.html" rel="stylesheet">
-
-    <style>
-        body {
-            background-image: url("unnamed.gif");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            height: 1000px;
-            text-align: center;
-            margin: 0 auto;
-        }
-        .display {
-            font-family: square;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.80);
-            margin: 100px 200px 200px 200px;
-            height: 500px;
-        }
-        @font-face {
-            font-family: 'square';
-            src: url(square_sans_serif_7.ttf);
-        }
-
-        @font-face {
-            font-family: 'led';
-            src: url(led_sans.ttf);
-        }
-    </style>
 <body>
-    <div class="container">
+<div class="decor">
+    <div class="container-fluid">
     <div class="display">
         <div class="row">
             <div class="col-12 column">
                 <h1> Display Evens </h1>
+                <br><br>        <br><br>
 
-                Starting Number <input type="textbox" value=""><br>
-                Ending Number <input type="textbox" value=""><br>
-                Step <input type="textbox" value=""><br>
+                <form>
+                <label for="startNum"> Starting Number </label>
+                <input id="startNum" type="textbox" value=""><br><br>
 
-                <input type="button" value="Display Evens"><br>
+                <label for="endNum"> Ending Number </label>
+                <input id="endNum" type="textbox" value=""><br><br>
 
-                Here are the even numbers between 4 and 20 by 3's: <br>
+                <label for="endNum"> Step </label>
+                <input id="step" type="textbox" value=""><br><br>
+
+                <br><br>
+                <input id="btnDisplay" type="button" value="Display Evens"><br><br><br>
+                
+                </form>
+
+                <div class="theAnswer">
+                Here are the even numbers between <b class="a">4</b> and <b class="b">20</b> by <i class="c">3's</i>: <br>
+                <p id="disEvens"> 
                 4 <br>
                 10 <br>
                 16 <br>
+                </p>
+                </div>
             </div>
         </div>
+        <input id="reset" type="button" value="RESET">
+    </div>
     </div>
     </div>
 </body>
-
+    <script type="text/javascript" src="displayEvens.js"></script>
 </html>
