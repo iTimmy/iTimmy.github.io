@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title> CONTACT PAGE </title>
+        <link rel="preload" as="font" href="TropicalAsianDemoRegular-11V0.woff" type="font/woff" crossorigin="anonymous">
+            <link rel="preload" as="font" href="Tomatoes-O8L8.woff" type="font/woff" crossorigin="anonymous">
+            <link rel="preload" as="image" href="home.jpg">
+            <!-- Link to BOOTSTRAP -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <!-- Link to CSS -->
+            <link rel="stylesheet" type="text/css" href="contact.css">
+    </head>
+<body>
+
+<noscript>
+  <div class="message">
+    This site requires JavaScript. I will only be visible if you have it disabled.
+  </div>
+</noscript>
+
+<div class="bg"></div>
+    <div class="container-fluid bg-dark CONTACT-BODY">
+        <div class="RESTAURANT-header">
+            <div class="current">
+            Contact Page
+            </div>
+            <!-- TOP TITLE -->
+            <h1> Timmy Eats </h1>
+                <!-- NAVIGATION LINKS -->
+                <p class="navLinks">
+                    <a href="restaurant.html">Home</a> |
+                    <a href="menu(JS).html">Menu</a> |
+                    <a href="contact.html">Contact Us</a>
+                </p>
+        </div>
+        <form onmouseover="appearBG()">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column"><br>
+                <b>Name:</b> <input class="fill" id="NAME" type="string" name="ok" value="" placeholder="John Smith"><b class="important"> * </b><br>
+                <p class="validityNAME"></p><br>
+                <b>Email:</b> <input class="fill" id="EMAIL" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="ok" value="" placeholder="username@domain.net"><b class="important"> * </b><br>
+                <p class="validityEMAIL"></p><br>
+                <b>Phone:</b> <input class="fill" id="PHONE" type="number" name="ok" value="" placeholder="123-456-7890"><b class="important"> * </b><br>
+                <p class="validityPHONE"></p><br>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <label for="Choose"><b>Reason for Inquiry</b></label><br>
+                <select id="reason">
+                    <option>Catering <font color="grey">(default)</font></option>
+                    <option>Private Party</option>
+                    <option>Feedback</option>
+                    <option>Others</option>
+                </select><br><br>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <b>Additional Information:</b><br>
+                <textarea id="ok" value="ok" placeholder="I would like to know more about your business!"></textarea><br><br>
+            </div>      
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <b>Have you been to the restaurant?</b><br>
+                <input id="no" type="radio" value="nope" id="no" name="Q">
+                    <label for="no">No</label>
+                <input id="yes" type="radio" value="yeah" id="yes" name="Q">
+                    <label for="yes">Yes</label><br>
+                <br>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <b>Best days for contact:</b><br>
+                <input id="MON" type="checkbox" value="Mon">Mon 
+                <input id="TUES" type="checkbox" value="Tues">Tues 
+                <input id="WED" type="checkbox" value="Wed">Wed 
+                <input id="THURS" type="checkbox" value="Thurs">Thurs 
+                <input id="FRI" type="checkbox" value="Fri">Fri<br><br>
+            </div>
+        </div>
+        <hr />
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column">
+                <div class="click">
+                    <input class="send" onclick="ALL()" type="button" name="Send Request" value="Send Request">
+                </div>
+            </div>
+        </div>
+        </form>
+        <!-- STORE INFORMATION -->
+        <div class="row  justify-content-center storeInfo">
+            <div class="col-xs-12">
+                <br>
+                31-10 Thomson Avenue, <br>
+                Long Island City, NY 11101 USA <br>
+                (718) 482-7200 <br>
+                <br>
+            </div>
+        </div>
+    
+    
+        <!-- END: GRID -->
+        <div class="row justify-content-center contact-submission-form">
+            <div class="col-xs-12 column1">
+                <h1> Timmy Eats </h1>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column1">
+                <h3> Is this information correct? </h3>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-12 column1">
+                <br>
+                Hello, <b id="confirmNAME">name</b>! <br>
+                Please confirm if <b id="confirmMAIL">-email-</b> is where you would like to be contacted. <br>
+                Your reason for inquiry is <b id="confirmRFA"> RFA </b><br>
+                <!--You have stated: <br> -->
+                <br>
+                This is <b id="confirmNOT"></b>your first time in this restaurant. <br>
+                <!-- You prefer to be contacted on: <br> -->
+                <i id="confirmDays"></i>
+            </div>
+        </div>
+        <!--<input id="navBTN" type="button" onclick="navScroll()">-->
+    </div>
+    <!-- END OF BODY -->
+</body>
+    <script>
+        var CSF = document.querySelector(".contact-submission-form");
+        var confirmName = document.getElementById("confirmNAME");
+        var confirmMail = document.getElementById("confirmMAIL");
+        var confirmRFA = document.getElementById("confirmRFA");
+        var confirmNot = document.getElementById("confirmNOT");
+        var confirmDays = document.getElementById("confirmDays");
+        var name, email, phone;
+
+        function appearBG() {
+            document.querySelector(".bg").style.opacity = "100%";
+        }
+        window.addEventListener('scroll', formValidation);
+
+        function ALL() {
+            if (formValidation() == true) {
+                formSubmit();
+            } else {
+                alert("Please fill in the form.");
+            }
+        }
+
+
+        function formSubmit() {
+            name = document.getElementById("NAME").value;
+            email = document.getElementById("EMAIL").value;
+            CSF.style.display = "block";
+            CSF.style.backgroundImage = "url('ASSETS/IMG/CONTACT/home2.jpg')";
+            confirmName.innerHTML = name.charAt(0).toUpperCase() + name.slice(1, 20);
+            confirmMail.innerHTML = email.toUpperCase();
+
+            confirmRFA(0);
+            confirmRFA.innerHTML = document.getElementById("reason").selectedIndex;
+
+            window.scrollTo ({
+                top: 1100,
+                behavior: 'smooth',
+            })
+        }
+
+        function formValidation() {
+            name = document.getElementById("NAME").value;
+            var nameINPUT = document.getElementById("NAME");
+            var nameValidity = document.querySelector(".validityNAME");
+            email = document.getElementById("EMAIL").value;
+            var emailINPUT = document.getElementById("EMAIL");
+            var emailValidity = document.querySelector(".validityEMAIL");
+            phone = document.getElementById("PHONE").value;
+            var phoneINPUT = document.getElementById("PHONE");
+            var phoneValidity = document.querySelector(".validityPHONE");
+
+            // NAME VALIDITY
+            if (name == "") {
+                nameValidity.style.display = "block";
+                nameINPUT.style.boxShadow = "0px 2px 10px red";
+                nameValidity.innerHTML = "You must fill out your name.";
+                document.querySelector(".important").style.color = "red";
+                // document.querySelector(".important").innerHTML = " ✗ ";
+                // return false;
+            } else if (name.length < 2) { // bad name
+                nameValidity.style.display = "block";
+                nameINPUT.style.boxShadow = "0px 2px 10px red";
+                nameValidity.innerHTML = "This is not a valid name.";
+                document.querySelector(".important").style.color = "red";
+                // document.querySelector(".important").innerHTML = " ✗ ";
+                // return false;
+            } else { // good name
+                nameValidity.style.display = "none";
+                nameINPUT.style.boxShadow = "0px 2px 10px green";
+                // document.querySelector(".important").style.color = "green";
+                // document.querySelector(".important").innerHTML = " ✔ "; 
+                // return true;
+            }
+
+            // EMAIL VALIDITY 
+            if (email == "") {
+                emailValidity.style.display = "block";
+                emailINPUT.style.boxShadow = "0px 2px 10px red";
+                emailValidity.innerHTML = "You must fill out your email.";
+            } else { // good email
+                emailValidity.style.display = "none";
+                emailINPUT.style.boxShadow = "0px 2px 10px green";
+            }
+            /*if (email.endsWith(".com") != true || email.endsWith(".me") != true) { // bad email
+                emailValidity.style.display = "block";
+                emailINPUT.style.boxShadow = "0px 2px 10px red";
+                emailValidity.innerHTML = "You must fill out your email.";*/
+            
+
+            // PHONE VALIDITY
+            if (phone == "") {
+                phoneValidity.style.display = "block";
+                phoneINPUT.style.boxShadow = "0px 2px 10px red";
+                phoneValidity.innerHTML = "You must fill out your phone number.";
+                return false;
+            } else if (phone.length != 10 && phone != "") { // bad phone
+                phoneValidity.style.display = "block";
+                phoneINPUT.style.boxShadow = "0px 2px 10px red";
+                phoneValidity.innerHTML = "This is not a valid phone number.";
+                return false;
+            } else { // good phone
+                phoneValidity.style.display = "none";
+                phoneINPUT.style.boxShadow = "0px 2px 10px green";
+                return true;
+            }
+        }
+    </script>
+</html>

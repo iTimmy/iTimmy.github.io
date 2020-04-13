@@ -3,23 +3,41 @@
     <head>
         <title> Games </title>
     </head>
-
+         <!-- Link to BS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         body {
             color: white;
             text-align: center;
-            background-image: url("source.gif");
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
             font-size: 18px;
             font-family: Garamond;
-            filter: blur(5px);
-            transition-duration: 1000ms;
-            transition-property: filter;
+            background-color: black;
+            margin: 0 auto;
         }
-        body:hover {
-            filter: none;
+        .bg {
+            background: black url("~ASSETS~/IMG/source.gif") no-repeat center fixed;
+            background-size: cover;
+            filter: blur(12px);
+            position: absolute;
+            z-index: 1;
+            height: 200%;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+        .column, .row {
+            margin: 0 auto;
+            z-index: 2;
+        }
+        .column {
+            /* border: 5px solid cyan; */
+            width: 100%;
+            height: 100%;
+        }
+        .row {
+            /* border: 5px solid red; */
+            width: 100%;
+            height: 68%;
         }
         p {
             background-color: rgba(0, 0, 0, 0.75);
@@ -37,64 +55,80 @@
         }
         @font-face {
             font-family: 'Handular';
-            src: url(handlee-regular.ttf);
+            src: url(~ASSETS~/FONTS/handlee-regular.ttf);
         }
         @font-face {
             font-family: 'Viper';
-            src: url(SFViperSquadron.ttf);
+            src: url(~ASSETS~/FONTS/SFViperSquadron.ttf);
         }
         h1 {
             font-family: Viper;
             opacity: 50%;
             text-shadow: 0px 2px 15px lightblue;
         }
+        hr {
+            z-index: 2;
+        }
     </style>
-
 <body>
-    <h1> What would you like to play? </h1>
-    <a href="MiniGame/index.html"> Mental Math </a>
-        <p> Created by: Patrick, Shazena, and Timmy </p>
-        <p> You are to test your ability to decode math problems, <br>
-        ideally with your mind. <br>
-        You have three mental lives, <br>
-        better choose what is right. <br>
-        Feel free to take out a piece of paper and a pen, <br>
-        but you better be fast, <br>
-        You are set on a clock, <br>
-        so shoot while you last. </p>
-        <br>
-    <hr />
-    <a href="DisplayEvens/index.html"> Display Evens </a><br>
-    <p> Created by: Timmy @ Software-Guild </p>
-        <p> You are to test your ability to decode math problems, <br>
-        ideally with your mind. <br>
-        You have three mental lives, <br>
-        better choose what is right. <br>
-        Feel free to take out a piece of paper and a pen, <br>
-        but you better be fast, <br>
-        You are set on a clock, <br>
-        so shoot while you last. </p>
-        <br>
-    <hr />
-    <a href="LuckySevens/index.html"> Lucky Sevens </a><br>
-    <p> Created by: Timmy @ Software-Guild </p>
-        <p> You are to test your ability to decode math problems, <br>
-        ideally with your mind. <br>
-        You have three mental lives, <br>
-        better choose what is right. <br>
-        Feel free to take out a piece of paper and a pen, <br>
-        but you better be fast, <br>
-        You are set on a clock, <br>
-        so shoot while you last. </p>
-        <br>
-    <hr />
-
-
-
-    <div class="copyrightInfo">
-        <br><br><br>
-        Copyright © 2020 iTimmy USA. All rights reserved.
-        <br><br><br><br>
+<div class="bg"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 column">
+                <h1> What would you like to play? </h1>
+                <a href="MiniGame/index.html"> Mental Math </a>
+                    <p> Created by: Patrick, Shazena, and Timmy </p>
+                    <p> You are to test your ability to decode math problems, <br>
+                    ideally with your mind. <br>
+                    You have three mental lives, <br>
+                    better choose what is right. <br>
+                    Feel free to take out a piece of paper and a pen, <br>
+                    but you better be fast, <br>
+                    You are set on a clock, <br>
+                    so shoot while you last. </p>
+                    <br>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 column">
+                <a href="DisplayEvens/index.html"> Display Evens </a><br>
+                <p> Created by: Timmy @ Software-Guild </p>
+                    <p> You are to test your ability to decode math problems, <br>
+                    ideally with your mind. <br>
+                    You have three mental lives, <br>
+                    better choose what is right. <br>
+                    Feel free to take out a piece of paper and a pen, <br>
+                    but you better be fast, <br>
+                    You are set on a clock, <br>
+                    so shoot while you last. </p>
+                    <br>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 column">
+                <a href="LuckySevens/index.html"> Lucky Sevens </a><br>
+                <p> Created by: Timmy @ Software-Guild </p>
+                    <p> You are to test your ability to decode math problems, <br>
+                    ideally with your mind. <br>
+                    You have three mental lives, <br>
+                    better choose what is right. <br>
+                    Feel free to take out a piece of paper and a pen, <br>
+                    but you better be fast, <br>
+                    You are set on a clock, <br>
+                    so shoot while you last. </p>
+                    <br>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 column">
+                <div class="copyrightInfo">
+                    Copyright © 2020 iTimmy USA. All rights reserved.
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

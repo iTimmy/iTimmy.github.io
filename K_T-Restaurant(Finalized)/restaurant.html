@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <title> Timmy Eats </title>
+            <link rel="preload" as="font" href="TropicalAsianDemoRegular-11V0.woff" type="font/woff" crossorigin="anonymous">
+            <link rel="preload" as="font" href="Tomatoes-O8L8.woff" type="font/woff" crossorigin="anonymous">
+            <link rel="preload" as="image" href="home.jpg">
+            <!-- Link to BOOTSTRAP -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <!-- Link to CSS -->
+
+        <style>
+        body {
+            background-color: black;
+            margin: 0 auto;
+            width: 100%;
+            color: white;     
+            text-align: center;
+            font-family: Comic Sans;
+        }
+        .row {
+            background-color: rgba(0, 0, 0, 0.68);
+            height: 100%;
+        }
+        .row1 {
+            background-color: rgba(0, 0, 0, 0.99);
+            vertical-align: bottom;   
+        }
+        .column {
+            width: 630px; // stretch: fits the row
+            height: 500px; // stretch: fits the row
+            object-fit: cover; // keeps an even squared 50/50 fit in row
+        }
+        img {
+            width: 100%; // fits aspect ratio to column
+            height: 100%; // fit aspect ratio to column
+        }
+        .sectionWrite {
+            background-color: rgba(0, 0, 0, 0.75);
+            background-size: cover;
+            height: 86%;
+            align-items: center;
+            text-align: justify; // perfect box paragraph alignment
+        }
+        h2 {
+            background-color: rgba(0, 0, 0, 0.88);
+        }
+        .HEADER {
+            height: 860px;
+            width: 100%;
+        }
+        .videoRow {
+            background-color: black;
+        }
+        video {
+            width: 100%;
+        }
+        @media (max-width: 700px) {
+            video {
+                width: 100%;
+                height: 100%;
+            }
+            .column1 {
+            border: 5px solid blue;
+            height: 100%;
+        }
+        .RESTAURANT-header {
+            background-color: rgba(0, 0, 0, 0.8);
+        
+            width: 100%;
+            margin: 0 auto;
+            z-index: 3;
+            position: relative;
+        }
+        .RESTAURANT-header h1 {
+            //font-family: Tomatoes;
+            //text-decoration: underline;
+        }
+        .column1 {
+            border: 5px solid green;
+            height: 100%;
+        }
+        .storeInfo {
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-family: Tropical;
+        }
+
+        /*-- FONT FACES --
+@font-face {
+    font-family: "Tomatoes";
+    src: url("Tomatoes-O8L8.woff");
+} 
+
+@font-face {
+    font-family: "Tropical";
+    src: url("TropicalAsianDemoRegular-11V0.woff");
+}*/
+.right {
+    border: 2px solid green;
+    background-color: lime;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    float: right;
+    margin-top: 500px;
+}
+
+
+        </style>
+    </head>
+
+    <!-- When you click on the sushi home photo, it should
+    decrease in opacity and a slideshow of seafood should
+    play! -->
+
+<body>
+
+<noscript>
+  <div class="message">
+    This site requires JavaScript. I will only be visible if you have it disabled.
+  </div>
+</noscript>
+
+<div class="bg"></div>
+    <div class="container-fluid bg-black">
+        <div class="RESTAURANT-header">
+            <div class="current">
+            Home Page
+            </div>
+            <!-- TOP TITLE -->
+            <h1> Timmy Eats </h1>
+                <!-- NAVIGATION LINKS -->
+                <p class="navLinks">
+                    <a href="restaurant.html">Home</a> |
+                    <a href="menu(JS).html">Menu</a> |
+                    <a href="contact.html">Contact Us</a>
+                </p>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 HEADER">
+                <!-- TAKEN -->
+                <div id="preload">
+                    <!--<img src="ASSETS/IMG/HOME/home.jpg">-->
+                <p class="right"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around videoRow">
+            <div class="col-xs-12 column1">
+                <video autoplay muted loop id="mute" width="1200" height="850">
+                    <source src="ASSETS/IMG/HOME/Spot-Publicitario-Sushi.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row justify-content-around row1">
+            <div class="col-xs-6 m-3 column">
+                <img src="ASSETS/IMG/HOME/How-to-Cut-Salmon-for-Sashimi-an.gif" width=600>
+            </div>
+            <div class="col-xs-6 m-3 column">
+                <h2> Hey, there! </h2>
+                <p class="sectionWrite">
+                Are you feeling appetized?
+                Just know that we are here for you and we are going to fulfill your stomach.
+                This description should fill the entire black box but I am unsure as a restaurant 
+                owner on how much I should write to make this paragraph fit perfectly in this box. 
+                I hope my website looks very appetizing and I hope you are feeling appetized. 
+                Come to my restaurant if it ever exists.
+                I feel so old for staring at the screen 
+                for so long in order to make this website 
+                look appetizing to you. I hope that in 
+                return, you can write me compliments. 
+                My contact info is below the webpage 
+                I believe, but let me know if that 
+                number works. I hope that you like 
+                my food.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-xs-6 m-3 column">
+                <h2> About Timmy Eats </h2>
+                    <p class="align-middle sectionWrite"> 
+                    Timmy Eats is a well-graded seafood restaurant.
+                    We sell all kinds of fish in the highest quality, as well as crabs and lobsters.
+                    You can have it decorated in your plate or choose to eat raw.
+                    There is no limit as to how you can consume this as we take the time to assure you the safest meat quality all over in NYC.
+                    Timmy Eats is a well-graded seafood restaurant.
+                    We sell all kinds of fish in the highest quality, as well as crabs and lobsters.
+                    You can have it decorated in your plate or choose to eat raw.
+                    There is no limit as to how you can consume this as we take the time to assure you the safest meat quality all over in NYC.
+                    Timmy Eats is a well-graded seafood restaurant.
+                    Decorate in your plate or choose to eat raw.
+                    There is no limit as to how you can consume this as we take the time to assure you the safest meat quality all over in NYC.
+                    <br><br>
+
+                    You will enjoy it! 
+                    <br><br>
+                    Bye! 
+                    </p>
+            </div>
+            <div class="col-xs-6 m-3 column">
+                <img class="img-rounded" src="ASSETS/IMG/HOME/TIMMY_ENVIRONMENT.png" height=388>
+            </div>
+        </div>
+        <div class="row justify-content-around videoRow">
+            <div class="col-xs-12 m-3 column1">
+                <video autoplay muted loop id="mute" width="1200" height="800">
+                    <source src="ASSETS/IMG/HOME/Sushi-Commercial.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!-- STORE INFORMATION -->
+        <div class="row justify-content-around storeInfo">
+            <div class="col-xs-12">
+                <br>
+                31-10 Thomson Avenue, <br>
+                Long Island City, NY 11101 USA <br>
+                (718) 482-7200 <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+       
+</body>
+
+    <!-- Link to JS -->
+    
+
+</html>

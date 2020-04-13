@@ -1,6 +1,7 @@
 // IDK
 var value = 0;
 var num = 1;
+var text, e; // text: display | e: <br> element
 
 ////////// ALL INIT ////////////
 // INIT: Display Evens BTN
@@ -27,8 +28,12 @@ reset.addEventListener('click', function AGAIN() {
     window.location.reload(true);
 });
 
+
+
 // EXE: 2
 function displayEvens() {
+    console.log("Clearing...");
+    clearDisplay();
     console.log("startNum: " + Number(document.getElementById("startNum").value));
     console.log("endNum: " + Number(document.getElementById("endNum").value));
     console.log("step: " + Number(document.getElementById("step").value));
@@ -38,7 +43,7 @@ function displayEvens() {
             a.innerHTML = Number(document.getElementById("startNum").value);
             b.innerHTML = Number(document.getElementById("endNum").value);
             c.innerHTML = Number(document.getElementById("step").value);
-            document.querySelector(".decor").style.backgroundImage = "url('VillainousEvenAfricanharrierhawk-size_restricted.gif')";
+            document.querySelector(".decor").style.backgroundImage = "url('ASSETS/IMG/VillainousEvenAfricanharrierhawk-size_restricted.gif')";
         themeChange();
             setTimeout(displayEvens1, 1000);
             fucksake();
@@ -47,8 +52,6 @@ function displayEvens() {
 
 // EXE: 3
 function fucksake() {
-    var text, e; // text: display | e: <br> element
-    // disEvens.appendChild(text);
     console.log("startNum with step");
     // logic
     var math1 = Number(document.getElementById("startNum").value);
@@ -69,22 +72,21 @@ function fucksake() {
                 e = document.createElement("br");
                 disEvens.appendChild(text);
                 disEvens.appendChild(e);
-            } else {
-            }
+            } else {}
         }
     }
-    //disEvens.innerHTML = math1;
     document.querySelector(".theAnswer").style.display = "inline";
 }
 
 function clearDisplay() {
     // clears display
-    disEvens.innerHTML = "yo";
+    disEvens.innerHTML = "";
 }
 
 function inputNum() {
-    if (Number(document.getElementById("startNum").value) == String)
+    if (document.getElementById("startNum").value === String) {
         alert("You must input a number.");
+    }
 }
 
 // quick background change

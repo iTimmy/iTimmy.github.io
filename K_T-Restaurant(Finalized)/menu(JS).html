@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> "Timmy Eats" Menu </title>
+            <!--Link to BOOTSTRAP -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <!-- Link to CSS -->
+            <link rel="stylesheet" href="restaurantStyles.css" />
+    </head>
+
+<body>
+
+<noscript>
+  <div class="message">
+    This site requires JavaScript. I will only be visible if you have it disabled.
+  </div>
+</noscript>
+
+    <!-- BODY -->
+    <div class="MENU-BODY">
+        <!-- START: GRID 1 -->
+        <div class="container-fluid cover">
+                <!-- ROW 1 -->
+                <div class="row">
+                    <!-- COLUMN 1 -->
+                    <div class="col-12 column">
+                        <!-- CURRENT PAGE -->
+                        <div class="RESTAURANT-header">
+                            <div class="current">
+                            Menu Page
+                            </div>
+
+                            <!-- TOP TITLE -->
+                            <h1> Timmy Eats </h1>
+                                <!-- NAVIGATION LINKS -->
+                                <div class="navLinks">
+                                <a href="restaurant.html">Home</a> |
+                                <a href="menu(JS).html">Menu</a> |
+                                <a href="contact.html">Contact Us</a>
+                                </div>
+                        </div><br>
+                    </div>
+                </div>
+
+                <!-- Main IDEA -->
+                <div class="row">
+                    <div class="col-12 column">
+                        <p class="black-line"><br>
+                            We primarily sell lobsters, shrimp, crabs, and all kinds of fish. Enjoy.<br><br>
+                        </p>
+                    </div>
+                </div>
+                <!-- Food Choices -->
+                <br><div class="row foodChoice">
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="CRABS" onclick="crabScroll()">
+                            <img class="images" src="crab.jpg">
+                            <h3>Crabs</h3>$0.99
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="FISH" onclick="fishScroll()">
+                            <img class="images" src="fish.jpg">
+                            <h3>Fish</h3>$0.99
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="LOBSTER" onclick="lobsterScroll()">
+                            <img class="images" src="lobster.jpg">
+                            <h3>Lobster</h3>$0.99
+                        </div>
+                    </div>
+                </div>
+                <div class="row foodChoice">
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="SEAWEED" onclick="seaweedScroll()">
+                            <img class="images2" src="seaweed.jpg">
+                            <h3>Seaweed</h3>$0.99
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="SHRIMP" onclick="shrimpScroll()">
+                            <img class="images" src="shrimp.jpg">
+                            <h3>Shrimp</h3>$0.99
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-3">
+                        <div class="SQUID" onclick="squidScroll()">
+                            <img class="images2" src="squid.jpg">
+                            <h3>Squid</h3>$0.99
+                    </div>
+                </div>
+            </div><br> 
+
+            <!-- COLUMN 1: STORE INFORMATION -->
+            <div class="row storeInfo"> 
+                <div class="col-lg-12 col-xs-8">
+                    <br>
+                    31-10 Thomson Avenue, <br>
+                    Long Island City, NY 11101 USA <br>
+                    (718) 482-7200 <br>
+                    <br>
+                </div>
+            </div><br>
+    <!-- END OF BODY -->
+    <!-- BODY -->
+    <div class="container-fluid-2 MENU-BODY-2">
+            <div class="menuOrder" onmouseover="highlight()" onmouseout="nohighlight()">
+                <div class="row">
+                    <div class="col-12 column">
+                        <h1> Timmy Eats, You Order! </h1>
+                        <hr />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column">
+                        <h2 style="color:red; text-shadow:0px 1px 8px red"> Standard Meal </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Alaskan King Crab <br>
+                        $0.99 | Hairy Crab <br>
+                        $0.99 | Hanasaki Crab <br>
+                        $0.99 | Red King Crab <br>
+                        $0.99 | Snow Crab <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Cod | $0.99 <br>
+                        Bass | $0.99 <br>
+                        Sardine | $0.99 <br>
+                        Sashimi | $0.99 <br>
+                        Tuna | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Blue Cheese Lobster <br>
+                        $0.99 | BLT Lobster <br>
+                        $0.99 | Lobster Burrito <br>
+                        $0.99 | Lobster Pie <br>
+                        $0.99 | Lobster Roll <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Bok Choy Mesh | $0.99 <br>
+                        Seaweed Chips | $0.99 <br>
+                        Seaweed Risotto | $0.99 <br>
+                        Seaweed Salad | $0.99 <br>
+                        Seaweed Bread | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        $0.99 | Fried Shrimp <br>
+                        $0.99 | Garlic Shrimp <br>
+                        $0.99 | Grilled Shrimp <br>
+                        $0.99 | Honey Shrimp <br>
+                        $0.99 | Teriyaki Shrimp <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        Basic Calamari | $0.99 <br>
+                        Butter Garlic Squid | $0.99 <br>
+                        Chopped Squid Mash | $0.99 <br>
+                        Crispy Squid Rings | $0.99 <br>
+                        Touchy Squid | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column"><br>
+                        <hr />
+                        <h2 style="color:orange; text-shadow:0px 1px 8px orange"> Appetizers </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        <h3> Beverages </h3>
+                        $0.99 | Bubble Tea <br>
+                        $0.99 | Soda <br>
+                        $0.99 | Sparkling Water <br>
+                        $0.99 | Syrup <br>
+                        $0.99 | Tea <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        <h3> Sides </h3>
+                        Cole Slaw | $0.99 <br>
+                        Guacamole | $0.99 <br>
+                        Mashed Potatoes | $0.99 <br>
+                        Miso Soup | $0.99 <br>
+                        Touchy Squid | $0.99 <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 column"><br>
+                        <hr />
+                        <h2 style="text-shadow:0px 1px 8px orange"> Desserts </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 column" style="text-align:left; padding: 30px 0px 30px 80px">
+                        <h3> Sweet Bakes </h3>
+                        $0.99 | Banana Ice Cream <br>
+                        $0.99 | Cheese Cake <br>
+                        $0.99 | Coffee Cake <br>
+                        $0.99 | Fried Ice Cream <br>
+                        $0.99 | Plain Ice Cream <br>
+                    </div>
+                    <div class="col-6 column" style="text-align:right; padding: 30px 80px 30px 0px">
+                        <h3> Fruit Salads </h3>
+                        Bananas | $0.99 <br>
+                        Blueberries | $0.99 <br>
+                        Oranges | $0.99 <br>
+                        Raspberries | $0.99 <br>
+                        Strawberries | $0.99 <br>
+                    </div>
+                </div>
+            </div>
+        
+        <input id="navBTN" type="button" onclick="navScroll()">
+    </div>
+    <!-- END OF BODY -->
+    </div>
+    </div>
+
+</body>
+
+   
+
+</html>

@@ -1,50 +1,66 @@
 <html>
-
     <head>
         <title> Display Evens </title>
-
         <!-- Link to BS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Link to CSS -->
         <link rel="stylesheet" type="text/css" href="displayEvens.css">
     </head>
-
 <body>
 <div class="decor">
     <div class="container-fluid">
-    <div class="display">
         <div class="row">
-            <div class="col-12 column">
-                <h1> Display Evens </h1>
-                <br><br>        <br><br>
+            <div class="col-xs-12 navHeader">
+                <a href="../DisplayEvens"><img src="ASSETS/IMG/Action___States_-_Vol._3-19-512.png" height=50 width=50></a>
+            </div>
+        </div>
+        <div class="display">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 column">
+                    <h1> Display Evens </h1>
+                    <br><br>        <br><br>
 
-                <form>
-                <label for="startNum"> Starting Number </label>
-                <input id="startNum" type="textbox" value=""><br><br>
+                    <form>
+                    <label for="startNum"> Starting # </label>
+                    <input id="startNum" type="textbox" value=""><br><br>
 
-                <label for="endNum"> Ending Number </label>
-                <input id="endNum" type="textbox" value=""><br><br>
+                    <label for="endNum"> Ending # </label>
+                    <input id="endNum" type="textbox" value=""><br><br>
 
-                <label for="endNum"> Step </label>
-                <input id="step" type="textbox" value=""><br><br>
+                    <label for="endNum"> Step # </label>
+                    <input id="step" type="textbox" value=""><br><br>
 
-                <br><br>
-                <input id="btnDisplay" type="button" value="Display Evens"><br><br><br>
-                
-                </form>
-
-                <div class="theAnswer">
-                Here are the even numbers between <b class="a">4</b> and <b class="b">20</b> by <i class="c">3's</i>: <br>
-                <p id="disEvens"> 
-                
-                </p>
+                    <br><br>
+                    <input id="btnDisplay" type="button" value="Display Evens"><br><br><br>
+                    
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 column">
+                    <div class="theAnswer">
+                    <font color="yellow">Here are the even numbers between <b class="a">4</b> and <b class="b">20</b> by <i class="c">3's</i>:</font><br>
+                    <p id="disEvens"> 
+                    
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 column">
+                    <input id="reset" type="button" value="RESET">
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 copyrightInfo">
+                    <br>Copyright © 2020 iTimmy USA. All rights reserved.
                 </div>
             </div>
         </div>
-        <input id="reset" type="button" value="RESET">
     </div>
-    </div>
-    </div>
+</div>
 </body>
+    <!-- Link to JS -->
     <script type="text/javascript" src="displayEvens.js"></script>
 </html>

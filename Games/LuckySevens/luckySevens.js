@@ -13,21 +13,38 @@ var b = document.getElementById("b");
 var c = document.getElementById("c");
 var d = document.getElementById("d");
 
+window.addEventListener('scroll', sticky);
+
+function sticky() {
+    const scroll = window.scrollY;
+    console.log(scroll);
+    if (scroll == 0) {
+        console.log("change");
+        document.querySelector(".copyrightInfo").style.position = "fixed";
+        document.querySelector(".copyrightInfo").style.top = "180px";
+    }
+    if (scroll >= 208) {
+        console.log("action");
+        document.querySelector(".copyrightInfo").style.position = "relative";
+        document.querySelector(".copyrightInfo").style.removeProperty(top);
+    }
+}
+
 playPlay.addEventListener('click', ALL);
-   
+
 
 function ALL() {
     play();
 }
 
-document.body.style.backgroundImage = "url('1527785749.jpeg')"; 
+document.body.style.backgroundImage = "url('ASSETS/IMG/1527785749.jpeg')"; 
 
 function rollDice() {
-    document.getElementById("rollDie").setAttribute("src") = "ElatedImpartialArmadillo-small.gif"
+    document.getElementById("rollDie").setAttribute("src") = "ASSETS/IMG/ElatedImpartialArmadillo-small.gif"
 }
 
 function dumb() {
-     document.body.style.backgroundImage = "url('1527785749.jpeg')";
+     document.body.style.backgroundImage = "url('ASSETS/IMG/1527785749.jpeg')";
 }
 
 function play() {
@@ -43,7 +60,7 @@ function play() {
         betMoney.style.boxShadow = "0px 1px 10px blue";
         rollDie();
         //style
-        document.body.style.backgroundImage = "url('ElatedImpartialArmadillo-small.gif')";
+        document.body.style.backgroundImage = "url('ASSETS/IMG/ElatedImpartialArmadillo-small.gif')";
         setTimeout(dumb, 1000);
     }
 }

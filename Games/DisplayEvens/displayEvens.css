@@ -1,11 +1,10 @@
 body {
-    background-image: url("unnamed.gif");
+    background-image: url("ASSETS/IMG/unnamed.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 1200px;
-    width: 1200px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     background-color: black;
@@ -14,7 +13,7 @@ body {
     font-family: Verdana;
     color: white;
     background-color: rgba(0, 0, 0, 0.80);
-    padding: 100px 0px 200px 0px;
+    //padding: 50px 0px 200px 20px;
     height: 500px;
 }
 
@@ -25,20 +24,18 @@ h1 {
 
 @font-face {
     font-family: 'square';
-    src: url(square_sans_serif_7.ttf);
+    src: url(ASSETS/FONTS/square_sans_serif_7.ttf);
 }
 
 @font-face {
     font-family: 'led';
-    src: url(led_sans.ttf);
+    src: url(ASSETS/FONTS/led_sans.ttf);
 }
 
 .cover {
     background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
     background-position: center;
-    height: 1200px;
-    width: 1200px;
 }
 .decor {
     background-image: none;
@@ -46,10 +43,9 @@ h1 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 1200px;
-    width: 1200px;
     text-align: center;
     margin: 0 auto;
+    height: 100%;
 }
 input {
     color: white;
@@ -94,4 +90,38 @@ input[type="textbox"] {
 }
 .theAnswer, .texty {
     display: none;
+}
+/*
+.column, .navHeader, .copyrightInfo {
+    border: 5px solid cyan;
+    width: 100%;
+}
+.row {
+    border: 5px solid red;
+}
+*/
+.navHeader {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    color: white;
+    text-align: left;
+}
+img {
+    box-shadow: 0px 2px 10px blue;
+    margin: 10px 0px 0px 10px;
+    opacity: 20%;
+    transition-duration: 200ms;
+    
+}
+img:hover {
+    box-shadow: 0px 2px 10px cyan;
+    opacity: 100%;
+}
+.copyrightInfo {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 0;
 }

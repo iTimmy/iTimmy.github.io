@@ -1,0 +1,149 @@
+/*---------------CONTACT-BODY--------------------------*/
+body, html {
+    background-color: black;
+    color: white;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Comic Sans;
+}
+.container-fluid {
+    padding: 0px 0px 0px 0px;
+}
+.bg {
+    background: black url("ASSETS/IMG/CONTACT/glacier.jpg") no-repeat center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    position: absolute;
+    z-index: 1;
+    height: 120%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transition-property: opacity;
+    transition-duration: 1000ms;
+    opacity: 0%;
+    /* opacity: 100%; */
+}
+.send:hover {
+    color: white;
+    box-shadow: 0px 20px 50px teal;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.row {
+    /* border: 5px solid red; */
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.column {
+    /* border: 5px solid cyan; */
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.column1 {
+    border: 5px solid green;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.validityNAME, .validityEMAIL, .validityPHONE {
+    display: none;
+    font-size: 12px;
+    color: red;
+}
+.important {
+    color: red;
+    font-size: 20px;
+}
+textarea {
+    width: 50%;
+    height: 20%;
+}
+#NAME, #EMAIL, #PHONE {
+    margin-right: 30px;
+    width: 30%;
+}
+.RESTAURANT-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+.storeInfo {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: Tropical;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+.contact-submission-form {
+    background: black url("ASSETS/IMG/CONTACT/home2.jpg") no-repeat center fixed;
+    background-size: cover;
+    display: none;
+    text-align: center;
+    padding: 200px 0px 300px 0px;
+    font-size: 20px;
+    width: 100%;
+}
+.contact-submission-form p {
+    text-align: justify;
+    font-family: Papyrus;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin: 0 auto;
+    transition-duration: 1000ms;
+    padding-bottom: 50px;
+    font-family: Papyrus;
+    z-index: 20;
+    position: relative;
+}
+
+@media (min-width: 500px) {
+    form {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 75%;
+        margin: 0 auto;
+        transition-duration: 1000ms;
+    }
+}
+@media (min-width: 700px) {
+    form {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 65%;
+        margin: 0 auto;
+        transition-duration: 1000ms;
+    }
+}
+@media (min-width: 1000px) {
+    form {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 55%;
+        margin: 0 auto;
+        transition-duration: 1000ms;
+    }
+}
+/*
+@media (max-size: 700px) {
+    form {
+        background-color: red;
+        //width: 200px;
+    }
+    .row {
+        border: 5px solid black;
+        //width: 2000px;
+    }
+}*/
+hr {
+    height: 20px;
+}
+.send {
+    background-color: rgba(255, 255, 255, 0.38);
+}

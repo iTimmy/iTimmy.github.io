@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+    </head>
+    <style>
+        .carousel {
+            position: relative;
+            width: 88%;
+            margin: 0 auto;
+            height: 600px;
+        }
+        .carousel_track-container {
+            background: lightgreen;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            opacity: 50%;
+        }
+        .carousel_track {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .carousel_slide {
+            //position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .carousel_button-left {
+            position: absolute;
+            top: 50%;
+            border: 5px solid black;
+            background-color: red;
+            z-index: 3;
+            cursor: pointer;
+        }
+        .carousel_button-right {
+            position: absolute;
+            top: 50%;
+            left: 96%;
+            border: 5px solid black;
+            background-color: blue;
+            z-index: 3;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <div class="carousel">
+        <button class="carousel_button-left"></button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide">
+                    <img src="anony1.jpg">
+                </li>
+                <li class="carousel_slide">
+                    <img src="anony2.jpg">
+                </li>
+                <li class="carousel_slide">
+                    <img src="anony3.jpg">
+                </li>
+                <li class="carousel_slide">
+                    <img src="3816.gif">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel_button-right"></button>
+        <div class="carousel_nav">
+        </div>
+        <div class="carousel_indicator">
+        </div>
+    </div>
+</body>
+    <script>
+        const track = document.querySelector(".carousel_track");
+        var leftBTN = document.querySelector(".carousel_button-left");
+        var rightBTN = document.querySelector(".carousel_button-right");
+        const slides = Array.from(track.children);
+
+        console.log(track);
+
+
+        leftBTN.addEventListener('click', function() {
+            slides[0].style.left = 0;
+            slides[1].style.left = "0px";
+            slides[2].style.left = "0px";
+            slides[3].style.left = "0px";
+        })
+        rightBTN.addEventListener('click', function() {
+            slides[0].style.left = 0;
+            slides[1].style.left = "0px";
+            slides[2].style.left = "0px";
+            slides[3].style.left = "420px";
+        });
+    </script>
+</html>
