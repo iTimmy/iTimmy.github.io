@@ -244,3 +244,10 @@ column p {
     font-family: "Fall";
     src: url("FallIsComingRegular-Mx9B.ttf");
 }
+
+.column {
+    border: 5px solid cyan;
+}
+.row {
+    border: 5px solid red;
+}
