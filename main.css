@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family: American Typewriter, serif;
 }
-/*
+
 .bg {
     background: black url("IMAGES/4.jpg") no-repeat center fixed;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
     right: 0;
     transition-property: filter;
     transition-duration: 500ms;
-}*/
+}
 
 /* 'Student Timmy' */
 h1 {
@@ -77,12 +77,10 @@ input:hover {
     src: url(BRUTALITYEXTRA.ttf);
 }
 .row {
-    border: 5px solid red;
     margin: 0 auto;
     z-index: 3;
 }
 .column {
-    border: 5px solid cyan;
     margin: 0 auto;
     z-index: 2;
     width: 100%;
@@ -94,11 +92,9 @@ input:hover {
     }
 }
 .column1 {
-    border: 5px solid green;
     width: 100%;
 }
 .ROWW {
-    border: 5px solid yellow;
     width: 100%;
     margin: 0 auto;
 }

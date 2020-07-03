@@ -1,71 +1,192 @@
-
 body {
     background-color: black;
     color: white;
+    text-align: center;
 }
+
+.single-fashion {
+    text-align: left;
+}
+
 .container-fluid {
-    border: 5px solid black;
 }
+
 .row {
-    border: 5px solid red;
 }
-.column {
-    border: 5px solid cyan;
+
+
+
+/* ################## */
+/* ### Cover Area ### */
+
+.cover-area .column {
+    padding-top: 70px;
+    margin: 0 auto;
+    text-align: center;
 }
-.HEADER {
-    background-attachment: fixed;
-    background-image: url("home.jpg");
-    background-position: center;
+
+.cover-area {
+    background: black url("cover.jpg") no-repeat center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0px 5px 2000px black;
-    box-shadow: 0px 5px 500px black;
-    box-shadow: 0px 20px 100px black;
-    box-shadow: 0px 20px 50px black;
-    font-family: Cobblestone;
+    width: 100%;
+    padding-top: 50px;
 }
-.navigationHeader {
-    border: 8px white solid;
-    width: 100%; 
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
-    background-color: rgba(0, 0, 0, 0.5);
+
+.row-one {
+    padding-top: 320px;
+}
+
+.facts {
+    padding-top: 10px;
+}
+
+.row-one h4 {
+    font-size: larger;
+}
+
+.cool-facts-area {
+    /*box-shadow: 0px 1px 30px rgb(255, 140, 0, 0.5);*/
+}
+
+.carousel-item img {
+    height: 600px;
+    width: 300px;
+    z-index: -1;
+}
+
+#carouselExampleCaptions {
+    padding-bottom: 100px;
+}
+
+
+
+/* #################### */
+/* ### Plugins Area ### */
+
+.category-area {
+    padding: 100px 0px 100px 0px;
+    z-index: -1;
+}
+
+.category-area img {
+    height: 300px;
+    width: 500px;
+}
+
+
+
+/* ##################### */
+/* ### Feedback Area ### */
+
+.feedback-area {
+    /*background-color: #02041E;*/
     background-size: cover;
-    /* margin: 0 auto; */
-    width: 100%; 
+    padding: 100px 0px 100px 0px;
 }
-.navig {
+
+
+
+/* ############################ */
+/* ### Menu Navigation Area ### */
+
+.menuNav {
+    margin: 0 auto;
     justify-content: center;
+    position: center;
 }
-/*
-h1 {
-    font-family: cursive;
-    font-size: 150px;
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
-    background-color: rgba(0, 0, 0, 0.38);
+
+.navbar-nav {
+    margin: 0 auto;
 }
-*/
-.BODY-1 {
-    background-attachment: fixed;
-    background-image: url("home2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Papyrus;
+
+.button {
+    z-index: 2;
 }
-.cover {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: -10px 0px 20px 100px black;
+
+.menuNav button {
+    background-color: rgba(10, 0, 70, 0.25);
+    box-shadow: 0px 1px 20px black;
 }
-.container {
-    /*text-align: center;*/
+
+.menuNav button:hover {
+    box-shadow: 0px 1px 15px limegreen;
 }
-input {
-    border-radius: 20%;
+
+@media (min-width: 1135px) {
+    .menuNav button {
+        padding: 25px 145px 25px 145px;
+    }
+}
+
+@media (max-width: 1135px) {
+    .menuNav button {
+        padding: 50px 145px 50px 145px;
+    }
+
+    .menuNav {
+        padding-left: 70px;
+        padding-right: 50px;
+        margin: 0 auto;
+    }
+}
+
+.menuNav a {
     color: white;
-    width: 162px;
-    background-color: rgba(0, 0, 0, 0.38);
-    box-shadow: 0 20px 10px black;
 }
-input:hover {
-    background-color: rgba(0, 0, 0, 0.78);
+
+.menuNav a:hover {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+
+
+/* ######################### */
+/* ### Social-Media Area ### */
+
+.instagram-feed-area {
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
+.footer-area {
+    background-color: #010101;
+    padding: 50px 0px 20px 0px;
+}
+
+.single-footer-widget {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.row-one {
+    padding-bottom: 200px;
+}
+
+hr {
+    color: white;
+    background-color: white;
+}
+
+.default-header {
+    background-color: rgb(0, 0, 12);
+    z-index: 2;
+    padding: 15px 0px 10px 0px;
+}
+
+.default-header button {
+    padding: 5px 100px 5px 100px;
+    margin: 0 auto;
 }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Original - Lifestyle Blog Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../main.css">
+
+</head>
+
+<style>
+
+    .container-fluid {
+        /*
+        background-color: black;
+        background-image: url("../3816.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        width: cover;
+        */
+    }
+    .lowNav {
+        background-image: url("../3816.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .box {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 50px 50px 0px 50px
+    }
+    .box p, .box a {
+        color: white;
+    }
+
+    .box a, .box span {
+        color: blue;
+    }
+
+    .single-blog-content {
+        /*
+        background-color: rgba(0, 0, 0, 0.5);
+        */
+    }
+    .box img {
+        box-shadow: 0px 1px 15px white;
+        height: 200px;
+        width: 300px;
+    }
+    .about img {
+        padding: 20px;
+    }
+
+    hr {
+        color: black;
+        background-color: black;
+    }
+
+
+</style>
+
+<body>
+<div class="bg"></div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div>
+
+<!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">.......</a></li>
+                                    <li><a href="#">.......</a></li>
+                                    <li><a href="#">.......</a></li>
+                                    <li><a href="#">.......</a></li>
+                                    <li><a href="#">.......</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+<!-- ##### Header Area End ##### -->
+
+<!-- Logo Area -->
+    <hr>
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="../index.html" class="original-logo"><img src="../img/3241028947_45066d94-c25f-491c-a629-ec1891c77a6e.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <hr>
+<!-- END: Logo Area -->
+
+<!-- Nav Area -->
+    <hr>
+        <nav>
+        <div class="container-fluid">
+            <!-- Nav Start -->
+            <div class="row menu">
+                <div class="column column-1 col-lg-3 col-sm-12">
+                    <a href="../index.html"><li>Home</li></a>
+                </div>
+                <div class="column column-2 col-lg-3 col-sm-12">
+                    <a href="reverse-extractions/about.html"><li>Reverse Extractions
+                        <ul class="dropdown">
+                            <a href="../reverse-extractions/about.html"><li>About</li></a>
+                            <a href="../reverse-extractions/appliances.html"><li class="Appliances" onclick="dropdown()">Appliances</li></a>
+                                <ul class="appliances">
+                                    <a href="#"><li>Maxillary Appliances</li></a>
+                                    <a href="#"><li>Mandibular Appliances</li></a>
+                                    <a href="#"><li>Bimax Headgear</li></a>
+                                </ul>
+                            <a href="../reverse-extractions/applications.html"><li>Applications</li></a>
+                                <ul class="applications">
+                                    <a href="#"><li>Home Remedies</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li></a>
+                </div>
+                <div class="column column-3 col-lg-3 col-sm-12">
+                    <a href="../blog/blog1.html"><li>Blog
+                        <div class="megamenu">
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">Headline 1</li>
+                                <!--
+                                <li><a href="#">Mega Menu Item 1</a></li>
+                                <li><a href="#">Mega Menu Item 2</a></li>
+                                <li><a href="#">Mega Menu Item 3</a></li>
+                                <li><a href="#">Mega Menu Item 4</a></li>
+                                <li><a href="#">Mega Menu Item 5</a></li>
+                                -->
+                            </ul>
+                            <!--
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">Headline 2</li>
+                                <li><a href="#">Mega Menu Item 1</a></li>
+                                <li><a href="#">Mega Menu Item 2</a></li>
+                                <li><a href="#">Mega Menu Item 3</a></li>
+                                <li><a href="#">Mega Menu Item 4</a></li>
+                                <li><a href="#">Mega Menu Item 5</a></li>
+                            </ul>
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">Headline 3</li>
+                                <li><a href="#">Mega Menu Item 1</a></li>
+                                <li><a href="#">Mega Menu Item 2</a></li>
+                                <li><a href="#">Mega Menu Item 3</a></li>
+                                <li><a href="#">Mega Menu Item 4</a></li>
+                                <li><a href="#">Mega Menu Item 5</a></li>
+                            </ul>
+                            <ul class="single-mega cn-col-4">
+                                <li class="title">Headline 4</li>
+                                <li><a href="#">Mega Menu Item 1</a></li>
+                                <li><a href="#">Mega Menu Item 2</a></li>
+                                <li><a href="#">Mega Menu Item 3</a></li>
+                                <li><a href="#">Mega Menu Item 4</a></li>
+                                <li><a href="#">Mega Menu Item 5</a></li>
+                            </ul>
+                            -->
+                        </div>
+                    </li>
+                    </a>
+                </div>
+            <div class="column column-4 col-lg-3 col-sm-12">
+                <a href="../contact.html"><li>Contact</li></a>
+            </div>
+        </div>
+        </nav>
+        <!-- END: Nav -->
+    <hr>
+<!-- END: Nav Area -->
+
+
+<!-- ______________________________________________ -->
+
+
+
+    <!-- About -->
+    <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/b1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content text-center">
+                        <h2>About Reversal Extractions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: About -->
+
+    <!-- About -->
+    <div class="about">
+        <div class="blog-wrapper section-padding-100-0 clearfix">
+            <div class="container-fluid">
+                <a href="#" class="post-tag">Reverse Extractions</a>
+                <h4><a href="#" class="post-headline">About</a></h4>
+                <h2>The Dental Scam That Every Orthodontic Patient Should Be Aware Of</h2><br>
+
+                <h3>The Orthodontic “Extractions” Method</h3>
+
+                Orthodontists will commonly recommend extractions of healthy teeth to solve your oral deformity when in fact, it is a permanent solution to a temporary problem. In other words, this will worsen a situation that can be better fixed within other treatments. Why? Extractions is a result of bone loss, and bone loss is the loss of facial density.
+
+                <br><hr>
+            </div>
+                <div class="row align-items-end">
+                    <!-- Single Blog Area -->
+                    <div class="col-12 col-lg-4">
+                        <div class="single-blog-area clearfix mb-100">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <div class="line"></div>
+                                <p class="mb-3">
+                                    <h2>What is the Malpractice Behind Orthodontics?</h2>
+                                    Some orthodontics practice methods that are most standard-known for treating improper teeth alignment. The generic aim in orthodontics is strictly the idea of achieving straight teeth, but bypassing the real reasons as to why teeth are not straight in the first place. Extractions is as similar as to sweeping dust under the rug. The cleanliness under that rug is completely ignored and the reason for this doing is most likely profit, ignorance, or both.
+                                    <br>
+
+                                    <br><br><h2>Reasons for Orthodontics & How it Works</h2>
+                                    The reason why we want straight teeth is to look beautiful and to sound literate. You will notice that some people are “born with straight teeth” and some are “born with crooked teeth,” though this is not the case as some orthodontists have claimed. Habits are passed on from parent to offspring, but not the structure of teeth. Oral habits affect the movement of our teeth, hence the structure of your current teeth is epigenetic and not genetically inherited. First in foremost, we must understand how teeth works. Teeth are constantly moving, and they will never stop moving - which is why orthodontists will require their patients to wear retainers to prevent your teeth from reversing back into its original position. We all have different mouths and “different size“ of teeth, that is because we have different ways of breathing. The improper structure of our teeth gives the illusion of facial deformity, such as those who may believe their head is too big or too small and that they lack facial symmetry. As a result, they are sometimes recommended with extractions in order to fix facial asymmetry or malocclusion. For those who do not know what a malocclusion is; it means that the top teeth and the bottom teeth do not align with each other in the same z plane coordinate when you bite down.
+                                    <br>
+
+                                    <br><br><h2>The Myths of “Crowded Teeth”</h2>
+                                    One popular form of malocclusion is ”crowded teeth.” So what is “crowded teeth” exactly? We have mentioned that oral habits affect the way our teeth move. So what if the true reason as to why teeth crowds is due to the lack of proper tongue posture which have forced the teeth to pull back? Teeth constantly moves. The teeth cannot go anywhere else but back when you do not have that physical support structure behind your posterior teeth. This conflict is also known as having a small mouth, whereas your tongue does not have enough room to accommodate the oral palate. The apparent solution is to create more space for the mouth, such as using palatal expanders to create greater palatal width. This summarizes how improper it is to diagnose someone with “crowded teeth” because crowded teeth is no more than just an oral illusion. There is no such thing as having more teeth than others unless you have hyperdontia, which is a rare condition when an organism grows extra teeth, also known as having supernumerary (extra) teeth. Later in time, we all commonly have 32 teeth… and some teeth do not erupt.
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Blog Area -->
+                    <div class="col-12 col-lg-4">
+                        <div class="single-blog-area clearfix mb-100">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <p class="mb-3">
+                                    <h2>Why does this Issue Matter?</h2><h5><i>How does it Impact the Health of our Society?</i></h5>
+                                    This can cause sleep disorders such as sleep apnea, when the tongue falls back - restricting your airway. This is likewise to suffocating in your sleep. The obvious solution is definitely not committing to more bone resorption, in other words, extractions to accommodate greater oral room. This pulls the position of the posterior teeth further back. This will only worsen the health of the patient by subtracting bone and this disrupts the proper facial growth in humans. How does it disrupt proper facial growth in humans? The face is meant to grow forward. If you were to subtract either what is left of your top or bottom jaw, then one will have more than the other. Your jaws will not be growing in sync, which is what nature designed our bodies to do. Why does this matter? The benefits of forward facial growth, which is basically the natural process of our body growth, is that it averts your face from melting which is the reason why some people have sagging skin and lines. We are constantly fighting with gravity, so the lack of posterior facial bone will only get worse if our faces are pushed back further. Our faces will completely melt.
+                                    <br>
+
+                                    <br><br><h2>Of What Orthodontic Treatments to Consider Instead of Extractions</h2>
+                                    Extractions for braces is a common approach to treating patients with malocclusion. Here are few of many alternative treatments you can consider in order to prevent having extractions.
+                                    New strategies are developing all the time in managing abnormal teeth alignment within the field of orthodontics. The method of extractions strictly for braces is by far the worst approach of managing teeth. So what are the alternate methods to treating improper teeth structure? The greatest option for us is expansion.<br>
+                                
+                                    <br><ul>
+                                    <li>
+                                    <h5>Palatal Expanders:</h5>
+                                    As for palatal expanders, some orthodontists will say no to patients at or over 16 years of age, presuming the bone plates have closed, but yet the orthodontist is not aware that the lateral palatal suture sits right above our mouths and can be stimulated to expand and grow as these sutures do not close - likewise, the sutures of our skulls. The fusing of this suture varies of age, not concerning the age number. There is no evidence or certainty as to when these sutures fuse - however it is not our growth being limited by age.
+                                    </li><br>
+                                    <li>
+                                    <h5>Controlled Arch Growth Appliance:</h5>
+                                    This appliance represents the same concept, though growth happens anteriorly. These appliances are best suited for patients who have small palatal length.
+                                    </li><br>
+                                    </ul>
+                                    <img src="../img/Spring-Retainer.jpg" height=0 width=200><br><br>
+
+                                    Remember that orthotropics is an idea, not just an appliance. These appliances were worth mentioning in this article as they contribute to the idea of orthotropics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Blog Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-catagory-area clearfix mb-100">
+                            <!-- Blog Content -->
+                            <div class="single-blog-content">
+                                <br><br><h3>Do extractions still sound like a preferable treatment?</h3>
+
+                                So not only is this practice a scam in taking your hard-earned money as well as your healthy teeth, but this practice also poses serious health threats in a patient’s life. Some use permanent solutions to temporary problems, likewise to playing with death. Do your research about your oral health before you get a so-called professional to do the research for you. I hope this article convinces you to think twice about seeing an orthodontist who supports these schemes. 
+                                <br><br>Most importantly, know yourself before you have anyone diagnose you.
+                                <br><br>
+                                And to all of you orthodontists who proceed in treating patients with extractions; orthodontics is an art, not a demolition site.
+                                <br>
+                            </div>
+                            <img src="../img/Spring-Retainer.jpg" height=0 width=200>
+                            <img src="../img/blog-img/1.jpg" alt="">
+                            <img src="../img/blog-img/1.jpg" alt="">
+                            <!-- Catagory Title -->
+                            <div class="catagory-title">
+                                <a href="#">Lifestyle posts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: About -->
+
+    <!-- Results -->
+    <div class="cool-facts-area section-padding-100-0 bg-img background-overlay" style="background-image: url(../dark.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-blog-area blog-style-2 text-center mb-100">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <a href="#" class="post-tag">Reverse Extractions</a>
+                            <h4><a href="#" class="post-headline">About</a></h4>
+                            <p>I am still finding ways to recover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">40</span>%</h2>
+                        <p>Rage</p>
+                    </div>
+                </div>
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">30</span>%</h2>
+                        <p>Regret</p>
+                    </div>
+                </div>
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">15</span>%</h2>
+                        <p>Vendetta</p>
+                    </div>
+                </div>
+                <!-- Single Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-facts-area text-center mb-100">
+                        <h2><span class="counter">15</span>%</h2>
+                        <p>Annoyance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Results -->
+
+    <!-- ##### Blog Wrapper Start ##### -->
+    <div class="lowNav">
+        <div class="blog-wrapper section-padding-100-0 clearfix">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Blog Area  -->
+                    <div class="box col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-area blog-style-2 mb-100">
+                            <div class="single-blog-thumbnail">
+                                <img src="../img/Spring-Retainer.jpg" alt="">
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="single-blog-content mt-50">
+                                <div class="line"></div>
+                                <a href="appliances.html" class="post-tag">Reverse Extractions</a>
+                                <h4><a href="appliances.html" class="post-headline">Appliances</a></h4>
+                                <p>Appliances designed for facial growth.</p>
+                                <div class="post-meta">
+                                    <p>By <a href="#">Timothy Amarok</a></p>
+                                    <p>0 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Blog Area  -->
+                    <div class="box col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-area blog-style-2 mb-100">
+                            <div class="single-blog-thumbnail">
+                                <img src="../img/wp1983807-teeth-wallpapers.jpg" alt="">
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="single-blog-content mt-50">
+                                <div class="line"></div>
+                                <a href="applications.html" class="post-tag">Reverse Extractions</a>
+                                <h4><a href="applications.html" class="post-headline">Applications</a></h4>
+                                <p>Home applications for facial growth when you're broke from medical & dental expenses.</p>
+                                <div class="post-meta">
+                                    <p>By <a href="#">Timothy Amarok</a></p>
+                                    <p>0 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Blog Area  -->
+                    <div class="box col-12 col-md-6 col-lg-4">
+                        <div class="single-blog-area blog-style-2 mb-100">
+                            <div class="single-blog-thumbnail">
+                                <img src="../dark.jpg" alt="">
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="single-blog-content mt-50">
+                                <div class="line"></div>
+                                <a href="../blog/blog1.html" class="post-tag">Blog</a>
+                                <h4><a href="../blog/blog1.html" class="post-headline">My Experience</a></h4>
+                                <p>I will show you my journey and perhaps you may get insight on how to pull through.</p>
+                                <div class="post-meta">
+                                    <p>By <a href="#">Timothy Amarok</a></p>
+                                    <p>0 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Wrapper End ##### -->
+
+    <!-- Social Media Links -->
+    <div class="instagram-feed-area">
+    
+        <!-- ##### Sidebar Area ##### -->
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="post-sidebar-area">
+            </div>
+        </div>
+        <!-- Instagram Slides -->
+        <div class="instagram-slides owl-carousel">
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/facebookColor.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://www.facebook.com/timotheus.amarok/friends" class="d-flex align-items-center justify-content-center"><i class="fa fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../ig.jpg" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://www.instagram.com/tim_the_urban_kid/" class="d-flex align-items-center justify-content-center"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/githubColor.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://github.com/iTimmy" class="d-flex align-items-center justify-content-center"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/linkedinColor.png" height=500 width=600 alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://www.linkedin.com/in/kimberly-tim-176222188/" class="d-flex align-items-center justify-content-center"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/quoraColor.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://www.quora.com/profile/Kim-Tim-13" class="d-flex align-items-center justify-content-center"><i class="fa fa-quora"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/wordpressColor.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="http://itimmy184466868.wordpress.com" class="d-flex align-items-center justify-content-center"><i class="fa fa-wordpress"></i></a>
+                </div>
+            </div>
+            <!-- Single Insta Feed -->
+            <div class="single-insta-feed">
+                <img src="../img/logo/youtubeColor.png" alt="">
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <a href="https://www.youtube.com/channel/UCUsC47PpI0hpcKdiU4Ctjcg?view_as=subscriber" class="d-flex align-items-center justify-content-center"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Social Media Links -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="../js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="../js/active.js"></script>
+
+</body>
+
+</html>
